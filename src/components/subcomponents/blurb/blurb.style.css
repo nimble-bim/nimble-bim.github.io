@@ -1,0 +1,16 @@
+.blurb_container {
+  /* background: red; */
+  border: 10px solid purple;
+}
+
+.blurb_type {
+border: 1px solid red;
+}
+
+.blurb_title {
+  border: 1px solid blue;
+}
+
+.blurb_content {
+  border: 1px solid green;
+}
