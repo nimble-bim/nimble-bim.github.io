@@ -3,10 +3,33 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "node-sass": "4.12.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "@fortawesome/fontawesome-free": "5.7.2",
+    "@fortawesome/fontawesome-svg-core": "1.2.15",
+    "@fortawesome/free-solid-svg-icons": "5.7.2",
+    "@fortawesome/react-fontawesome": "0.1.4",
+    "babel-polyfill": "6.26.0",
+    "bootstrap": "4.2.1",
+    "history": "4.9.0",
+    "node-sass": "^4.11.0",
+    "query-string": "6.2.0",
+    "react": "^16.7.0",
+    "react-bootstrap": "^1.0.0-beta.5",
+    "react-dom": "^16.7.0",
+    "react-redux": "6.0.1",
+    "react-router-dom": "4.3.1",
+    "react-router-redux": "4.0.8",
+    "react-scripts": "2.1.1",
+    "react-scrollable-anchor": "^0.6.1",
+    "redux": "4.0.1",
+    "redux-persist": "5.10.0",
+    "redux-thunk": "2.3.0",
+    "socket.io-client": "2.2.0"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "4.1.0",
+    "eslint-plugin-prettier": "3.0.1",
+    "prettier": "1.16.4",
+    "redux-devtools-extension": "2.13.8"
   },
   "scripts": {
     "start": "react-scripts start",
