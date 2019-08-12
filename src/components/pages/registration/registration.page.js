@@ -24,7 +24,6 @@ export default class RegistrationPage extends React.Component {
       },
     ]
 
-
     return (
       <div className="page page_registration">
 
