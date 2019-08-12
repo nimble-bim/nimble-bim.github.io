@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+@import './app.colors.scss';
+
+%brand-head {
+  font-family: 'Space Mono', monospace;
+}
+
+%brand-body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+}
+
+.brand-head {
+  @extend %brand-head;
+  font-size: 36px;
+}
+
+body {
+  @extend %brand-body;
+  color: $charcoal;
+  
+  h1 {
+    font-size: 48px;
+    text-transform: capitalize; 
+  }
+
+  h2 {
+    font-size: 36px;
+    text-transform: capitalize; 
+  }
+
+  h3 {
+    font-size: 24px;
+    text-transform: capitalize; 
+  }
+
+  h4 {
+    font-size: 12px;
+    text-transform: capitalize; 
+  }
+
+  div {
+    font-size: 12px;
+  }
+
+  a {
+    font-size: 12px;
+  }
+}

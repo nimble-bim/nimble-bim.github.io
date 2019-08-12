@@ -1,0 +1,23 @@
+@import './app.themes.scss';
+
+html, body {
+  height: 100%;
+  width: 100%;
+  transition: all .5s ease;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.app {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+
+.app-content {
+  padding: 20px;
+  width: 100%;
+}

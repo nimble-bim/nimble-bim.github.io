@@ -1,0 +1,23 @@
+@import '../../../styles/app.fonts.scss';
+
+.blurb {
+}
+
+.blurb_subtitle {
+  color: tomato;
+  font-family: 'Space Mono', monospace;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.blurb_title {
+  font-family: 'IBM Plex Sans Light', sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.blurb_content {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
