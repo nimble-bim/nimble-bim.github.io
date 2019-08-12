@@ -31,7 +31,7 @@ export default class RegistrationPage extends React.Component {
         <div className="section section_stats">
           <Blurb
             blurb_subtitle="Why Use Nimble"
-            blurb_title='Build Better With Nimble'
+            blurb_title='Build Better With Nimble.'
             blurb_content={statHeaderContent}
           />
           <Stats info={stats} />
