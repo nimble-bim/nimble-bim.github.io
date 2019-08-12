@@ -1,0 +1,14 @@
+@import '../app.colors.scss';
+
+$theme-colors: (
+  'dark': (
+    'background': $charcoal,
+    'text': $white,
+    'text-important': $white
+  ),
+  'bright': (
+    'background': $white,
+    'text': $charcoal,
+    'text-important': $black
+  ),
+)
