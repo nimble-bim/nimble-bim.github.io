@@ -11,10 +11,14 @@ export default class HomePage extends React.Component {
   render() {
     return (
       <div className="page page_home home">
-        <h1 className="home_title">We Make Working With Revit Easier</h1>
-        <p className="how_cta">
-          Click To See How
-        </p>
+        
+        <div className="home_cta">
+          <h1 className="cta_title">We Make Working With Revit Easier</h1>
+          <p className="cta_button">
+            Click To See How
+          </p>
+        </div>
+        
         <div className="home_buttons">
           <TryButton className="buttons_try"/>
           <HuhButton className="buttons_huh"/>
