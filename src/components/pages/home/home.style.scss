@@ -1,3 +1,6 @@
+@import '../../../styles/app.fonts.scss';
+@import '../../../styles/app.colors.scss';
+
 
 .home {
   display: grid;
@@ -17,6 +20,14 @@
   align-self: center;
   justify-self: center;
   text-align: center;
+
+  .cta_title {
+    @extend %brand-body;
+    font-weight: 700;
+    font-size: 96px;
+    color: $black;
+    // margin: 0 50px;
+  }
 }
 
 .home_buttons {
