@@ -1,6 +1,6 @@
 import React from 'react';
 import './howitworks.style.scss';
-import Blurb from '../subcomponents/blurb/blurb.object';
+import Blurb from '../../subcomponents/blurb/blurb.object';
 
 export default class HowItWorks extends React.Component{
   constructor(props) {
