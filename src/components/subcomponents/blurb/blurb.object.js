@@ -1,11 +1,11 @@
 import React from 'react';
-import './blurb.style.css';
+import './blurb.style.scss';
 
 const Blurb = (props) => (
   <div className="blurb_container">
-    <p className="blurb_type">{props.blurbType}</p>
-    <h1 className="blurb_title">{props.blurbTitle}</h1>
-    <p className="blurb_content">{props.blurbContent}</p>
+    <p className="blurb_subtitle">{props.blurb_subtitle}</p>
+    <h1 className="blurb_title">{props.blurb_title}</h1>
+    <p className="blurb_content">{props.blurb_content}</p>
   </div>
 )
 
