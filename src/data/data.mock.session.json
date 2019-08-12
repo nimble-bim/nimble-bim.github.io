@@ -1,0 +1,36 @@
+{
+  "connection": {
+    "isRevit": true
+  },
+  "user": {
+    "id":"211e39b7-ef7c-43ff-a938-74fb18fa523b",
+    "first_name":"Nevsa",
+    "last_name":"Alsobrook",
+    "email":"nalsobrook0@joomla.org",
+    "gender":"Female",
+    "user_image_src":"http://dummyimage.com/215x124.png/ff4444/ffffff",
+    "discipline":"Cadillac",
+    "objs":{
+      "created":"4357",
+      "modified":"07838",
+      "deleted":"2134"
+    },
+    "parameters":{
+      "created":"20237",
+      "modified":"42",
+      "deleted":"65"
+      }
+    },
+  "project": {
+    "title": "Some Very Interesting Project",
+    "project_image_src":"http://dummyimage.com/215x124.png/ff4444/000000",
+    "id": {
+      "revitChannel": "",
+      "socketChannel": ""
+    },
+    "objs":{
+      "total":"3757",
+      "scanned":"838"
+    }
+  }
+}
