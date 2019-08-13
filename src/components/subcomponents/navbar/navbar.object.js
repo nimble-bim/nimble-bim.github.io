@@ -40,13 +40,14 @@ class NavbarElement extends React.Component {
         </Navbar.Toggle>
           <Navbar.Collapse>
             <Nav className="mr-auto">
-              <NavDropdown title="Revit Actions" id="collapsible-nav-dropdown" className={`${theme} navbar__dropdown`}>
+              {/* <NavDropdown title="Revit Actions" id="collapsible-nav-dropdown" className={`${theme} navbar__dropdown`}>
                 <NavDropdown.Item href="/revit/alerts" className={`${theme} navbar__dropdown__item`}>Alerts</NavDropdown.Item>
                 <NavDropdown.Item href="/revit/backup" className={`${theme} navbar__dropdown__item`}>BIM 360 Backup</NavDropdown.Item>
                 <NavDropdown.Item href="/revit/clashes" className={`${theme} navbar__dropdown__item`}>Clashes</NavDropdown.Item>
-              </NavDropdown>
-              <Nav.Link href="#how" className={theme}>How It Works</Nav.Link>
-              <Nav.Link href="#try" className={theme}>Try It</Nav.Link>
+              </NavDropdown> */}
+              <Nav.Link href="about" className={theme}>About Us</Nav.Link>
+              <Nav.Link href="try" className={theme}>Download</Nav.Link>
+              <Nav.Link href="how" className={theme}>How It Works</Nav.Link>
             </Nav>    
           </Navbar.Collapse> 
       </Navbar>

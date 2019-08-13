@@ -3,42 +3,28 @@
 
 .home {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-}
-
-.page_home {
-  background-image: url('../home/home.image.jpg');
-  background-size: 400%;
-  background-position: center center;
+  grid-template-columns: 2fr 3fr ;
+  grid-gap: 50px;
 }
 
 .home_cta {
-  grid-row: 2;
-  grid-column: -1 / 1;
   align-self: center;
-  justify-self: center;
-  text-align: center;
 
   .cta_title {
     @extend %brand-body;
-    font-weight: 700;
-    font-size: 96px;
+    font-weight: 400;
+    font-size: 48px;
     color: $black;
   }
 
-  .cta_button {
-    @extend %brand-head;
-    background-color: $canary;
-    color: $tomato;
-    font-size: 18px;
-    font-weight: 700;
-    width: auto;
-    height: 50px;
-    display: grid;
+  .cta_content {
+    @extend %brand-body;
   }
 }
 
-.home_buttons {
-  grid-row: 3;
+.home_video {
+  background-image: url('./home.video.gif');
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
