@@ -1,3 +1,15 @@
-.blurb_container {
-  width: 500px;
+.page_howitworks{
+  display: grid;
+  grid-template-rows: 2fr 5fr 2fr; 
+}
+
+.number{
+  border: 1px solid red;
+}
+.content{
+  border: 1px solid palegreen;
+  grid-template-columns: 4fr 5fr 1fr;
+}
+.buttons{
+  border: 1px solid purple;
 }
