@@ -1,6 +1,6 @@
 import React from 'react';
-import './howitworks.style.scss';
 import Blurb from '../../subcomponents/blurb/blurb.object';
+import './howitworks.style.scss';
 
 export default class HowItWorks extends React.Component{
   constructor(props) {
@@ -17,7 +17,15 @@ export default class HowItWorks extends React.Component{
         </div>
 
         <div className="section page_content">
-
+          <div className="blurb">
+            <Blurb 
+              blurb_subtitle="How It Works"
+              blurb_title="Design At Light Speed"
+              blurb_content="Some content"
+            />
+          </div>
+          <div className="image"></div>
+          <div className="more"></div>
         </div>
 
         <div className="section page_buttons">

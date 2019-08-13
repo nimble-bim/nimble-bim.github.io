@@ -1,6 +1,7 @@
 import React from 'react';
-import './home.style.scss';
 import { TryButton, HuhButton } from '../../subcomponents/buttons/buttons.object';
+import './home.desktop.scss';
+import './home.mobile.scss';
 
 export default class HomePage extends React.Component {
   constructor(props) {
@@ -23,11 +24,14 @@ export default class HomePage extends React.Component {
           <p className="cta_content">
             {cta_content}
           </p>
-          <TryButton className="buttons_try"/>
-          <HuhButton className="buttons_huh"/>
+          <div className="cta_buttons">
+            <TryButton className="buttons_try"/>
+            <HuhButton className="buttons_huh"/>
+          </div>
         </div>
         
         <div className="home_video" />
+        
       </div>
     )
   }
