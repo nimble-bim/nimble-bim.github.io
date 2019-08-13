@@ -1,7 +1,34 @@
 import React from 'react';
+import './home.style.scss';
+import { TryButton, HuhButton } from '../../subcomponents/buttons/buttons.object';
 
-const Home = (props) => (
-  <div>Home</div>
-)
+export default class HomePage extends React.Component {
+  constructor(props) {
+    super(props);
+    console.log('Issa home page');
+  }
 
-export default Home;
+  render() {
+    const cta_content = 
+      `We’ve streamlined this process to eliminate fees, 
+      unnecessary steps, and time-wasting appointments. 
+      Our efficiency not only makes it easier to buy a home, 
+      it translates into the best rates available.`
+
+    return (
+      <div className="page page_home home">
+
+        <div className="home_cta">
+          <h1 className="cta_title">We Make Working With Revit Easier</h1>
+          <p className="cta_content">
+            {cta_content}
+          </p>
+          <TryButton className="buttons_try"/>
+          <HuhButton className="buttons_huh"/>
+        </div>
+        
+        <div className="home_video" />
+      </div>
+    )
+  }
+}
