@@ -11,11 +11,19 @@ export default class HowItWorks extends React.Component{
   render() {
     return (
       <div className="page page_howitworks">
-        <Blurb 
-          blurb_type="How It Works"
-          blurb_title="Design At Light Speed"
-          blurb_content="Stuff..."
-        />
+        
+        <div className="section page_number">
+
+        </div>
+
+        <div className="section page_content">
+
+        </div>
+
+        <div className="section page_buttons">
+
+        </div>
+
       </div>
     )
   }
