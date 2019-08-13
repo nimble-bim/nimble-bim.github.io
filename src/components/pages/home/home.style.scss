@@ -1,7 +1,6 @@
 @import '../../../styles/app.fonts.scss';
 @import '../../../styles/app.colors.scss';
 
-
 .home {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -10,7 +9,7 @@
 
 .page_home {
   background-image: url('../home/home.image.jpg');
-  background-size: 300%;
+  background-size: 400%;
   background-position: center center;
 }
 
@@ -26,7 +25,17 @@
     font-weight: 700;
     font-size: 96px;
     color: $black;
-    // margin: 0 50px;
+  }
+
+  .cta_button {
+    @extend %brand-head;
+    background-color: $canary;
+    color: $tomato;
+    font-size: 18px;
+    font-weight: 700;
+    width: auto;
+    height: 50px;
+    display: grid;
   }
 }
 
