@@ -1,0 +1,22 @@
+@media (min-width: 768px) {
+  .page_registration {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin: 50px;
+  }
+
+  .section {
+    // border: 1px solid red;
+  }
+
+  .section_stats {
+    border: 1px solid chocolate;
+    padding-left: 100px;
+  }
+
+  .section_register {
+    border: 1px solid chocolate;
+    padding-right: 100px;
+  }
+}

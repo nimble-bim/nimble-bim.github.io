@@ -1,8 +1,10 @@
 import React from 'react';
-import './registration.style.scss';
 import Blurb from '../../subcomponents/blurb/blurb.object';
 import Stats from '../../subcomponents/stats/stats.object';
 import Registrar from '../../subcomponents/registrar/registrar.object';
+
+import './registration.mobile.scss';
+import './registration.desktop.scss';
 
 export default class RegistrationPage extends React.Component {
   constructor(props) {
