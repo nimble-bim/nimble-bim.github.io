@@ -13,7 +13,13 @@ export default class HowItWorks extends React.Component{
       <div className="page page_howitworks">
         <div className="number">01</div>
         <div className="content">
-          <div className="cont_text">something</div>
+          <div className="cont_text">
+            <Blurb
+              blurb_subtitle="How It Works"
+              blurb_title="Design At Light Speed"
+              blurb_content="We've streamlined this process to eliminate fees, unnecessary steps, and time-wasting appointments. Our efficiency not only makes it easier to buy a home, it translates into the best rates available."
+              />
+          </div>
           <div className="cont_image">pic</div>
           <div className="cont_more">more</div>
           </div> 

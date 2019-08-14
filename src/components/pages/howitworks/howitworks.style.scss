@@ -25,6 +25,13 @@
 .cont_more{
   background-color: tomato;
   grid-row: 2/6;
+  text-align: center;
+  padding-top: 125px;
+  // padding-bottom: 80px;
+  // border-color: black;
+  // padding-left:
+  // padding-right:
+
 }
 .buttons{
   display: grid;
@@ -35,10 +42,8 @@
 .button_try{
 border-width: 5px;
 text-align: center;
-margin: 30px;
 }
 .button_huh{
 border-width: 5px;
 text-align: center;
-margin: 30px;
 }
