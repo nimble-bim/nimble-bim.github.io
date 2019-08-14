@@ -11,9 +11,17 @@ export default class HowItWorks extends React.Component{
   render() {
     return (
       <div className="page page_howitworks">
-        <div className="number"></div>
-        <div className="content"></div> 
-        <div className="buttons"></div>
+        <div className="number">01</div>
+        <div className="content">
+          <div className="cont_text">something</div>
+          <div className="cont_image">pic</div>
+          <div className="cont_more">more</div>
+          </div> 
+        <div className="buttons">
+          <div className="button_try">Try</div>
+          <div className="button_huh">Huh?</div>
+        </div>
+
 
       </div>
     )

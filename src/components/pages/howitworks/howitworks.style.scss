@@ -1,15 +1,44 @@
 .page_howitworks{
   display: grid;
   grid-template-rows: 2fr 5fr 2fr; 
+  grid-gap: 5px;
+  height: 100%;
 }
 
 .number{
   border: 1px solid red;
 }
 .content{
+  display: grid;
   border: 1px solid palegreen;
   grid-template-columns: 4fr 5fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.cont_text{
+  background-color: tomato;
+  grid-row: 2/6;
+}
+.cont_image{
+  background-color: grey;
+  grid-row: 1/7;
+}
+.cont_more{
+  background-color: tomato;
+  grid-row: 2/6;
 }
 .buttons{
+  display: grid;
   border: 1px solid purple;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.button_try{
+border-width: 5px;
+text-align: center;
+margin: 30px;
+}
+.button_huh{
+border-width: 5px;
+text-align: center;
+margin: 30px;
 }
