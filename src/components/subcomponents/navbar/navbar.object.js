@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
-import './navbar.style.scss';
+import './navbar.desktop.scss';
+import './navbar.mobile.scss';
 
 const defaultState = {
   collapsed: true,
@@ -40,11 +41,6 @@ class NavbarElement extends React.Component {
         </Navbar.Toggle>
           <Navbar.Collapse>
             <Nav className="mr-auto">
-              {/* <NavDropdown title="Revit Actions" id="collapsible-nav-dropdown" className={`${theme} navbar__dropdown`}>
-                <NavDropdown.Item href="/revit/alerts" className={`${theme} navbar__dropdown__item`}>Alerts</NavDropdown.Item>
-                <NavDropdown.Item href="/revit/backup" className={`${theme} navbar__dropdown__item`}>BIM 360 Backup</NavDropdown.Item>
-                <NavDropdown.Item href="/revit/clashes" className={`${theme} navbar__dropdown__item`}>Clashes</NavDropdown.Item>
-              </NavDropdown> */}
               <Nav.Link href="about" className={theme}>About Us</Nav.Link>
               <Nav.Link href="try" className={theme}>Download</Nav.Link>
               <Nav.Link href="how" className={theme}>How It Works</Nav.Link>
