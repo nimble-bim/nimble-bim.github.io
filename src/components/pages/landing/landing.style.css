@@ -1,0 +1,14 @@
+.page {
+  display: grid;
+  background: white;
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.page_landing {
+  grid-template-rows: 100px 1fr 300px;
+}
+
+.page_registration {
+  grid-template-columns: 1fr 1fr;
+}
