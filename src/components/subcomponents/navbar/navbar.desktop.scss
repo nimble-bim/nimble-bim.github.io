@@ -1,0 +1,27 @@
+@media (min-width: 769px) {
+  .navbar {
+    margin: 0 100px;
+    border-bottom: 1px solid #bdbdbd;
+    padding-top: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+
+    .navbar-nav {
+      padding-left: 50px;
+      padding-top: 15px;
+    }
+  }
+
+  .navbar-brand {
+    padding-bottom: 0px;
+  }
+
+  .nav-link { 
+    margin-right: 50px;
+  }
+
+  .brand-head {
+    margin-bottom: 0px;
+  }
+}
