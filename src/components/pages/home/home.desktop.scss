@@ -10,6 +10,7 @@
   }
 
   .home__cta {
+    grid-row: span 3;
     display: grid;
     grid-template-rows: auto 1fr 100px;
     width: 425px;
@@ -30,9 +31,11 @@
   .cta__buttons {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-self: end;
   }
 
   .home__video {
+    grid-row: span 3;
     background-image: url('./home.video.gif');
     background-size: 100%;
     background-position: center center;

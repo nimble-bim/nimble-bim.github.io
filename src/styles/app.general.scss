@@ -26,6 +26,11 @@ html, body {
   width: 100%;
 }
 
+.page { 
+  display: grid;
+  grid-template-rows: 100px 1fr 100px;
+}
+
 
 // mobile stuff
 @media (max-width: 767px) {
@@ -46,7 +51,6 @@ html, body {
   }
   
   .page {
-    height: 100%;
     margin: 50px;
   }
 }
