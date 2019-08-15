@@ -1,3 +1,6 @@
+@import '../../../styles/app.fonts.scss';
+@import '../../../styles/app.colors.scss';
+
 .about {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
@@ -16,6 +19,15 @@
 .about__content {
   // border: 1px solid chocolate;
   grid-row: span 3;
+
+
+}
+
+.content__title {
+  font-weight: 300;
+  color: $charcoal;
+  padding-top: 20px;
+
 }
 
 .about__news {

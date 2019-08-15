@@ -24,6 +24,8 @@ export default class AboutPage extends React.Component {
 
         <div className="about__content">
           <SectionTitle section="About Us" />
+          <h1 className="content__title">We Want To Take The AEC World Into The Future</h1>
+          <p className="content__text"></p>
         </div>
 
         <div className="about__news">
