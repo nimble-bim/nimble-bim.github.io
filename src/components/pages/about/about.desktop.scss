@@ -5,16 +5,24 @@
 }
 
 .about__mission {
-  border: 1px solid chocolate;
+  // border: 1px solid chocolate;
 }
+
+.about__contact {
+  // border: 1px solid chocolate;
+  grid-row-start: 2;
+}
+
 .about__content {
-  border: 1px solid chocolate;
+  // border: 1px solid chocolate;
   grid-row: span 3;
 }
+
 .about__news {
-  border: 1px solid chocolate;
+  // border: 1px solid chocolate;
 }
+
 .about__timeline {
-  border: 1px solid chocolate;
+  // border: 1px solid chocolate;
   grid-column-start: 3;
 }
