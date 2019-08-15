@@ -2,6 +2,12 @@
 @import '../../../styles/app.colors.scss';
 
 @media (min-width: 768px) {
+
+  // .home {
+  //   display: grid;
+  //   grid-template-rows: 100px 1fr 100px;
+  // }
+
   .home {
     display: grid;
     grid-template-columns: 2fr 3fr ;
