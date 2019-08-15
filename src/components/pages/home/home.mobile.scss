@@ -1,0 +1,48 @@
+@import '../../../styles/app.fonts.scss';
+@import '../../../styles/app.colors.scss';
+
+@media (max-width: 767px) {
+  .home {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 1fr;
+    grid-gap: 50px;
+    padding: 0px 15px;
+  }
+
+  .home__cta {
+    display: grid;
+    grid-template-rows: auto 1fr 100px;
+    width: 100%;
+
+    .cta__title {
+      font-size: 36px;
+      font-weight: 700;
+      color: $black;
+    }
+
+    .cta__content {
+      margin-top: 20px;
+      font-size: 12px;
+      color: $black;
+      
+    }
+  }
+
+  .cta__buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .home__video {
+    // border: 1px solid gold;
+    // height: 200px;
+    grid-row-start: 1;
+    background-image: url('./home.video.gif');
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+

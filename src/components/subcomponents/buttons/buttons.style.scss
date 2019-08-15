@@ -5,12 +5,10 @@
   border-radius: 50px;
   color: $white;
   background-color: $tomato;
-  font-size: 18px;
   justify-self: left;
   align-self: center;
   width: 75%;
   height: auto;
-  padding: 10px 15px;
   text-align: center;
 }
 
@@ -19,11 +17,33 @@
   border-radius: 50px;
   color: $tomato;
   background-color: $white;
-  font-size: 18px;
   justify-self: right;
   align-self: center;
   width: 75%;
   height: auto;
-  padding: 10px 15px;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .button_hiw {
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+
+  .button_try {
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .button_hiw {
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+
+  .button_try {
+    padding: 10px 15px;
+    font-size: 12px;
+  }
 }
