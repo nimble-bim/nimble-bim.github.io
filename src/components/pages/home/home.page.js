@@ -1,5 +1,5 @@
 import React from 'react';
-import { TryButton, HuhButton } from '../../subcomponents/buttons/buttons.object';
+import { TryButton, HowButton } from '../../subcomponents/buttons/buttons.object';
 import './home.desktop.scss';
 import './home.mobile.scss';
 
@@ -26,7 +26,7 @@ export default class HomePage extends React.Component {
           </p>
           <div className="cta__buttons">
             <TryButton />
-            <HuhButton />
+            <HowButton />
           </div>
         </div>
         

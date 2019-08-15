@@ -13,10 +13,12 @@
     display: grid;
     grid-template-rows: auto 1fr 100px;
     // padding-right: 200px;
-    width: 450px;
+    width: 425px;
 
     .cta__content {
       margin-top: 20px;
+      // justify-self: center;
+      // align-self: center;
     }
   }
 
@@ -27,16 +29,6 @@
   .cta__buttons {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
-
-  .buttons_try {
-    justify-self: left;
-    width: 50px;
-  }
-
-  .buttons_huh {
-    justify-self: right;
-    width: 50px;
   }
 
   // .home_cta {
