@@ -1,5 +1,7 @@
 .about {
-  
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .about__mission {
@@ -7,10 +9,12 @@
 }
 .about__content {
   border: 1px solid chocolate;
+  grid-row: span 3;
 }
 .about__news {
   border: 1px solid chocolate;
 }
 .about__timeline {
   border: 1px solid chocolate;
+  grid-column-start: 3;
 }

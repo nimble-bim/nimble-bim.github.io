@@ -12,10 +12,10 @@ export default class AboutPage extends React.Component {
     return (
       <div className="page page__about about">
 
-        <div className="about__mission"></div>
-        <div className="about__content"></div>
-        <div className="about__news"></div>
-        <div className="about__timeline"></div>
+        <div className="about__mission">mission</div>
+        <div className="about__content">content</div>
+        <div className="about__news">news</div>
+        <div className="about__timeline">timeline</div>
 
       </div>
     )
