@@ -4,7 +4,6 @@ html, body {
   height: 100%;
   width: 100%;
   transition: all .5s ease;
-  // overflow: hidden;
 }
 
 #root {
@@ -20,10 +19,24 @@ html, body {
   grid-template-rows: auto 1fr;
 }
 
-.app-content {
-  margin: 50px 100px;
-}
-
 .page {
   height: 100%;
+}
+
+// mobile
+@media (max-width: 767px) {
+  .app {
+    height: auto;
+  }
+
+  .app-content {
+    margin: 16px 16px;
+  }
+}
+
+// desktop
+@media (min-width: 768px) {
+  .app-content {
+    margin: 50px 100px;
+  }
 }
