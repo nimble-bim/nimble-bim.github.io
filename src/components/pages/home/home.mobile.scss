@@ -1,11 +1,11 @@
 @import '../../../styles/app.fonts.scss';
 @import '../../../styles/app.colors.scss';
 
-@media (max-width: 767px) {
+@media (max-width: 1439px) {
   .home {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 200px 1fr;
+    grid-template-rows: 300px 1fr;
     grid-gap: 50px;
     padding: 0px 15px;
   }
@@ -42,6 +42,16 @@
     background-size: 100%;
     background-position: center center;
     background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 767px) {
+  .home {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 1fr;
+    grid-gap: 50px;
+    padding: 0px 15px;
   }
 }
 
