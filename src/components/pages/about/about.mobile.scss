@@ -10,15 +10,41 @@
   }
 
   .about__mission {
-    // border: 1px solid seagreen;
-  }  
+
+    .mission__text {
+      color: $grey-light;
+      text-transform: none;
+      font-weight: 400;
+      padding-right: 32px;
+      font-size: 18px;
+    }
+  } 
+
   .about__contact {
-    // border: 1px solid seagreen;
+
+    .contact__text {
+      color: $grey-light;
+      text-transform: none;
+      font-weight: 400;
+      padding-right: 32px;
+      font-size: 18px;
+    }
   }
   .about__content {
-    // border: 1px solid seagreen;
     grid-column: span 2;
     margin-top: 32px;
+
+    .content__title {
+      font-weight: 300;
+      color: $black;
+      font-size: 36px;
+    }
+
+    .content__text {
+      white-space: pre-line;
+      font-size: 14px;
+    }
+
   }
   .about__news {
     // border: 1px solid seagreen;   

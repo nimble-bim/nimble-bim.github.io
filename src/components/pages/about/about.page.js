@@ -41,6 +41,9 @@ export default class AboutPage extends React.Component {
 
         <div className="about__contact">
           <SectionTitle section="Contact Us" />
+          <h3 className="contact__text">
+            { text_mission }
+          </h3>
         </div>
 
         <div className="about__content">

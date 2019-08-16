@@ -1,13 +1,15 @@
-@import '../../../styles/app.fonts.scss';
-@import '../../../styles/app.colors.scss';
+@media (min-width: 768px) {
+  
+  @import '../../../styles/app.fonts.scss';
+  @import '../../../styles/app.colors.scss';
 
-.section__title {
-  @extend %brand-head;
-  color: $tomato;
-  font-size: 18px;
-  font-weight: 700;
-  // border-bottom: 1px solid $grey-light-extra;
-  margin-right: 50px;
-  // padding-bottom: 5px;
-  margin-bottom: 20px;
+  .section__title {
+    @extend %brand-head;
+    color: $tomato;
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 50px;
+    margin-bottom: 20px;
+  }
+
 }
