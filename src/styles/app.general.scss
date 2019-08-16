@@ -4,7 +4,7 @@ html, body {
   height: 100%;
   width: 100%;
   transition: all .5s ease;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 #root {
@@ -14,37 +14,16 @@ html, body {
 
 .app {
   width: 100%;
-  padding: 10px;
   height: 100%;
+  padding: 10px;
   display: grid;
   grid-template-rows: auto 1fr;
 }
 
 .app-content {
-  display: grid;
-  grid-template-columns: 1fr;
-  width: 100%;
+  margin: 50px 100px;
 }
 
-// mobile stuff
-@media (max-width: 767px) {
-  .app-content {
-    overflow: scroll;
-  }
-
-  .page {
-    height: 100%;
-  }
-}
-
-//desktop stuff
-@media (min-width: 768px) {
-
-  .app-content {
-    padding: 50px;
-  }
-  
-  .page {
-    margin: 50px;
-  }
+.page {
+  height: 100%;
 }
