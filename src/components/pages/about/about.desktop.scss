@@ -5,7 +5,7 @@
   display: grid;
   grid-template-columns: 200px 3fr 325px;
   grid-template-rows: 1fr 1fr 1fr;
-  // grid-gap: 100px;
+  grid-column-gap: 100px;
 }
 
 .about__mission {
