@@ -1,12 +1,6 @@
-@import '../../../styles/app.fonts.scss';
-@import '../../../styles/app.colors.scss';
-
 @media (min-width: 1440px) {
-
-  // .home {
-  //   display: grid;
-  //   grid-template-rows: 100px 1fr 100px;
-  // }
+  @import '../../../styles/app.fonts.scss';
+  @import '../../../styles/app.colors.scss';
 
   .home {
     display: grid;
@@ -18,19 +12,28 @@
   .home__cta {
     grid-row: span 3;
     display: grid;
-    grid-template-rows: auto 1fr 100px;
-    width: 425px;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    width: 500px;
+
+    .cta__tagline {
+      @extend %brand-head;
+      font-size: 18px;
+      font-weight: 700;
+      color: $tomato;
+      align-self: center;
+    }
 
     .cta__title {
-      // @extend %brand-body;
+      @extend %brand-body;
       font-weight: 400;
-      font-size: 48px;
       color: $black;
+      font-size: 60px;
     }
 
     .cta__content {
-      // @extend %brand-body;
+      @extend %brand-body;
       margin-top: 20px;
+      white-space: pre-line;
     }
   }
 
