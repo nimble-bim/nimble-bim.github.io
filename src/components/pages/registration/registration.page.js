@@ -26,13 +26,15 @@ export default class RegistrationPage extends React.Component {
       },
     ]
 
+    const stats_title = "Build Better With BIM. \n Be Nimble.";
+
     return (
       <div className="page page_registration">
 
         <div className="section section_stats">
           <Blurb
             blurb_subtitle="Why Use Nimble"
-            blurb_title='Build Better With Nimble.'
+            blurb_title= { stats_title}
             blurb_content={statHeaderContent}
           />
           <Stats info={stats} />

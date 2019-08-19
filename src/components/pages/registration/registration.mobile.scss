@@ -1,8 +1,9 @@
-@media (max-width: 767px) {
+@media (max-width: 1439px) {
   .page_registration {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
+    height: 100%;
   }
 
   .section {
@@ -11,6 +12,7 @@
 
   .section_stats {
     border: 1px solid chocolate;
+    height: 100%;
     // padding-left: 100px;
   }
 
