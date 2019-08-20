@@ -1,5 +1,17 @@
 @import '../../../styles/app.colors.scss';
 
+.button_round {
+  border: 1px solid $charcoal;
+  border-radius: 50px;
+  color: $charcoal;
+  background-color: $white;
+  justify-self: right;
+  align-self: center;
+  width: 75%;
+  height: auto;
+  text-align: center;
+}
+
 .button_try {
   border: 1px solid $tomato;
   border-radius: 50px;
@@ -25,24 +37,14 @@
 }
 
 @media (min-width: 768px) {
-  .button_hiw {
-    padding: 10px 15px;
-    font-size: 18px;
-  }
-
-  .button_try {
+  .button {
     padding: 10px 15px;
     font-size: 18px;
   }
 }
 
 @media (max-width: 767px) {
-  .button_hiw {
-    padding: 10px 15px;
-    font-size: 12px;
-  }
-
-  .button_try {
+  .button {
     padding: 10px 15px;
     font-size: 12px;
   }
