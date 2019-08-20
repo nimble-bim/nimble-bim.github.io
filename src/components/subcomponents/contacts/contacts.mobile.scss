@@ -1,0 +1,19 @@
+@media (max-width: 1439px) {
+
+  @import '../../../styles/app.colors.scss';
+  @import '../../../styles/app.fonts.scss';
+
+  .contact__type {
+    color: $grey_light;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .contact__info {
+    color: $charcoal;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+}

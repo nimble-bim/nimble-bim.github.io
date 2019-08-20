@@ -2,6 +2,8 @@ import React from 'react';
 import text_about from './about.content';
 import './about.desktop.scss';
 import './about.mobile.scss';
+import ContactData from '../../../data/data.contacts.json';
+import { ContactList } from '../../subcomponents/contacts/contacts.object';
 
 import { SectionTitle } from '../../subcomponents/misc/organizational.object';
 
@@ -11,7 +13,14 @@ export default class AboutPage extends React.Component {
     console.log("Issa About page!");
   }
 
+  renderContactData() {
+    const data = <ContactList contacts= { ContactData.contacts } />
+
+    return data;
+  }
+
   render() {
+    const contact_data = this.renderContactData();
     const text_mission = `“Our products are designed to make it easier to use BIM tools to make better buildings”`;
 
     return (
@@ -27,7 +36,7 @@ export default class AboutPage extends React.Component {
         <div className="about__contact">
           <SectionTitle section="Contact Us" />
           <h3 className="contact__text">
-            { text_mission }
+            { contact_data }
           </h3>
         </div>
 
@@ -50,24 +59,3 @@ export default class AboutPage extends React.Component {
     )
   }
 }
-
-export const ContactList = (props) => {
-  const contact_list = props.contacts 
-    ? props.contacts.map(c => <Contact contact_type={c.contact_type} contact_info={c.contact_info} /> )
-    : <li></li>
-
-  return (
-    <div className="contacts">
-      <ul className="contacts__list">
-        { contact_list }
-      </ul>
-    </div>
-  )
-}
-
-export const Contact = (props) => (
-  <div className="contact">
-    <span className="contact__type">{props.contact_type}</span>
-    <span className="contact__info">{props.contact_info}</span>
-  </div>
-)
