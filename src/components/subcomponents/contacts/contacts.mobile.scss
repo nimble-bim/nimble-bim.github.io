@@ -3,11 +3,16 @@
   @import '../../../styles/app.colors.scss';
   @import '../../../styles/app.fonts.scss';
 
+  .contact {
+    margin-bottom: 16px;
+  }
+
   .contact__type {
     color: $grey_light;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 12px;
+    margin-bottom: 8px;
   }
 
   .contact__info {

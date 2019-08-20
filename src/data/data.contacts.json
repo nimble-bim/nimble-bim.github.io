@@ -2,11 +2,11 @@
   "contacts": [
     {
       "contact_type": "Slack",
-      "contact_info": "with.benimble.com"
+      "contact_info": "talk.benimble.io"
     },
     {
       "contact_type": "Email",
-      "contact_info": "info@benimble.com"
+      "contact_info": "info@benimble.io"
     }
   ]
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Contact } from './contact.object';
-import './contacts.mobile.scss'
-import './contacts.desktop.scss'
+import './contacts.mobile.scss';
+import './contacts.desktop.scss';
 
 export const ContactList = (props) => {
   const contact_list = props.contacts 
