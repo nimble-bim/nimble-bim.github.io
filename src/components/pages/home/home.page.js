@@ -11,7 +11,7 @@ export default class HomePage extends React.Component {
 
   render() {
     const cta_content = 
-      `Experience a better way to design.
+      `We know working with Revit can be hard sometimes, so we created a product with a singular purpose - to make it easier for users to design using BIM. 
       
       Design, collaborate and fix things before they break - with Nimble.`
 
