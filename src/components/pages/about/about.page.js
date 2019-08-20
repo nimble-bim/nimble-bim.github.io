@@ -1,4 +1,5 @@
 import React from 'react';
+import text_about from './about.content';
 import './about.desktop.scss';
 import './about.mobile.scss';
 
@@ -11,23 +12,7 @@ export default class AboutPage extends React.Component {
   }
 
   render() {
-    const text_mission = 
-    `"Our efficiency not only makes it easier to buy a home, 
-    it translates into the best rates available`;
-
-    const text_about = 
-    `
-      We’ve streamlined this process to eliminate fees, unnecessary steps, and time-wasting appointments. Our efficiency not only makes it easier to buy a home, it translates into the best rates available.
-
-      The scientist named the population, after their distinctive horn, Ovid’s Unicorn. These four-horned, silver-white unicorns were previously unknown to science.
-
-      Now, after almost two centuries, the mystery of what sparked this odd phenomenon is finally solved.
-
-      Dr. Jorge Pérez, an evolutionary biologist from the University of La Paz, and several companions, were exploring the Andes Mountains when they found a small valley, with no other animals or humans. Pérez noticed that the valley had what appeared to be a natural fountain, surrounded by two peaks of rock and silver snow.
-
-      Pérez and the others then ventured further into the valley. “By the time we reached the top of one peak, the water looked blue, with some crystals on top,” said Pérez.
-
-    `;
+    const text_mission = `“Our products are designed to make it easier to use BIM tools to make better buildings”`;
 
     return (
       <div className="page page__about about">
@@ -54,12 +39,12 @@ export default class AboutPage extends React.Component {
           </div>
         </div>
 
-        <div className="about__news">
+        {/* <div className="about__news">
           <SectionTitle section="Recent News" />
         </div>
         <div className="about__timeline">
           <SectionTitle section="Timeline" />
-        </div>
+        </div> */}
 
       </div>
     )
