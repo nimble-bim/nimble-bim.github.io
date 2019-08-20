@@ -11,15 +11,15 @@ export default class Registrar extends React.Component {
     return (
       <div className="registrar">
 
-        <div className="registrar_info">
-          <div className="info_firstname"></div>
-          <div className="info_lastname"></div>
-          <div className="info_email"></div>
+        <div className="registrar__info">
+          <div className="info__firstname"></div>
+          <div className="info__lastname"></div>
+          <div className="info__email"></div>
         </div>
         
-        <div className="registrar_button">
-          <span className="button_register">Register</span>
-          <span className="button_cancel">Cancel</span>
+        <div className="registrar__button">
+          <span className="button__register">Register</span>
+          <span className="button__cancel">Cancel</span>
         </div>
 
       </div>
