@@ -1,6 +1,8 @@
 import React from 'react';
-import './stats.style.scss';
 import Stat from './stat.object';
+
+import './stats.desktop.scss';
+import './stats.mobile.scss';
 
 const Stats = props => {
   var i = 0;
