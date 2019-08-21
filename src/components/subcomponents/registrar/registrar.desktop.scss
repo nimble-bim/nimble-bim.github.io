@@ -3,8 +3,9 @@
 
 %input-typical {
   border-bottom: 1px solid $charcoal;
-  margin-right: 32px;
-  margin-bottom: 24px;
+  margin-right: 16px;
+  margin-left: 16px;
+  margin-bottom: 32px;
 
   input {
     border: none;
@@ -18,6 +19,8 @@
 }
 
 .registrar {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
 
   .registrar__title {
     @extend %brand-body;
@@ -43,5 +46,18 @@
       @extend %input-typical;
       grid-column: span 2;
     }
+  }
+
+  .info__button {
+    align-self: center;
+    margin-top: 25px;
+  }
+  
+  .button_register {
+    border: 1px solid $tomato;
+    background: $tomato;
+    color: $white;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }

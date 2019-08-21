@@ -25,6 +25,10 @@ export default class RegistrationPage extends React.Component {
         number: "20K",
         desc: "Amount of knowledge of BIM necessary"
       },
+      { 
+        number: "20K",
+        desc: "Amount of knowledge of BIM necessary"
+      }
     ]
 
     const stats_title = "Build Better With BIM. \n Be Nimble.";

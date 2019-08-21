@@ -24,13 +24,10 @@ export default class Registrar extends React.Component {
           <div className="info__email">
             <input type="email" placeholder="Email" />  
           </div>
+          <div className="info__button">
+            <RoundedButton text="Register" modifier="register" />
+          </div>
         </div>
-        
-        <div className="registrar__button">
-          {/* <span className="button__register">Register</span> */}
-          <RoundedButton text="Register" modifier="register" />
-        </div>
-
       </div>
     )
   }
