@@ -1,7 +1,9 @@
 @media (min-width: 769px) {
+  @import '../../../styles/app.colors.scss';
+
   .navbar {
     margin: 0 100px;
-    border-bottom: 1px solid #bdbdbd;
+    border-bottom: 1px solid $grey_light_extra;
     padding-top: 25px;
     padding-left: 0px;
     padding-right: 0px;
