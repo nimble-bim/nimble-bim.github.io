@@ -1,9 +1,12 @@
 import React from 'react';
-import './stats.style.scss';
 import Stat from './stat.object';
 
+import './stats.desktop.scss';
+import './stats.mobile.scss';
+
 const Stats = props => {
-  var list = props.info ? props.info.map(s => <Stat number={s.number} description={s.desc}/> ) : <li></li>;
+  var i = 0;
+  var list = props.info ? props.info.map(s => <Stat key={i++} number={s.number} description={s.desc}/> ) : <li></li>;
 
   return (
     <div className="stats">

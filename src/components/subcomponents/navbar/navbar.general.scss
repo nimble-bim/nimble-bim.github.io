@@ -1,0 +1,11 @@
+@import '../../../styles/app.colors.scss';
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}

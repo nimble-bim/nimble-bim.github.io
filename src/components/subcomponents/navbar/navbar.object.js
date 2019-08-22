@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import './navbar.general.scss';
 import './navbar.desktop.scss';
 import './navbar.mobile.scss';
 

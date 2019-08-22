@@ -1,5 +1,7 @@
 import React from 'react';
-import './registrar.style.scss';
+import { RoundedButton } from '../buttons/buttons.object';
+import './registrar.desktop.scss';
+import './registrar.mobile.scss';
 
 export default class Registrar extends React.Component {
   constructor(props) {
@@ -10,18 +12,22 @@ export default class Registrar extends React.Component {
   render() {
     return (
       <div className="registrar">
+        <h4 className="registrar__title">Information</h4>
 
-        <div className="registrar_info">
-          <div className="info_firstname"></div>
-          <div className="info_lastname"></div>
-          <div className="info_email"></div>
+        <div className="registrar__info">
+          <div className="info__firstname">
+            <input type="text" placeholder="First Name" />
+          </div>
+          <div className="info__lastname">
+            <input type="text" placeholder="Last Name" />
+          </div>
+          <div className="info__email">
+            <input type="email" placeholder="Email" />  
+          </div>
+          <div className="info__button">
+            <RoundedButton text="Register" modifier="register" />
+          </div>
         </div>
-        
-        <div className="registrar_button">
-          <span className="button_register">Register</span>
-          <span className="button_cancel">Cancel</span>
-        </div>
-
       </div>
     )
   }

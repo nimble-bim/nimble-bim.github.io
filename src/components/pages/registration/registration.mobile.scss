@@ -1,21 +1,28 @@
-@media (max-width: 767px) {
+@media (max-width: 1439px) {
   .page_registration {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
+    grid-template-columns: auto;
+    // grid-gap: 20px;
+    // padding: 25px;
   }
 
   .section {
-    // border: 1px solid red;
+    // height: 100vh;
+    margin-bottom: 25px;
   }
 
   .section_stats {
-    border: 1px solid chocolate;
+    // border: 1px solid chocolate;
+    // height: 100%;
     // padding-left: 100px;
   }
 
   .section_register {
-    border: 1px solid chocolate;
-    padding-right: 100px;
+    // border: 1px solid chocolate;
+    // padding-right: 100px;
+
+    .blurb_title {
+      white-space: nowrap;
+    }
   }
 }

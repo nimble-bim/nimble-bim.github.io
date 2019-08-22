@@ -1,5 +1,5 @@
 import React from 'react';
-import { TryButton, HuhButton } from '../../subcomponents/buttons/buttons.object';
+import { TryButton, HowButton } from '../../subcomponents/buttons/buttons.object';
 import './home.desktop.scss';
 import './home.mobile.scss';
 
@@ -11,22 +11,22 @@ export default class HomePage extends React.Component {
 
   render() {
     const cta_content = 
-      `We’ve streamlined this process to eliminate fees, 
-      unnecessary steps, and time-wasting appointments. 
-      Our efficiency not only makes it easier to buy a home, 
-      it translates into the best rates available.`
+      `We know working with Revit can be hard sometimes, so we created a product with a singular purpose - to make it easier for users to design using BIM. 
+      
+      Design, collaborate and fix things before they break - with Nimble.`
 
     return (
       <div className="page page_home home">
 
         <div className="home__cta">
+          <span className="cta__tagline">Advance Further, Faster</span>
           <h1 className="cta__title">We Make Working With Revit Easier</h1>
           <p className="cta__content">
             {cta_content}
           </p>
           <div className="cta__buttons">
             <TryButton />
-            <HuhButton />
+            <HowButton />
           </div>
         </div>
         

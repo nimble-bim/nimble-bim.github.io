@@ -1,25 +1,21 @@
 @media (max-width: 768px) {
-  // .navbar {
-  //   margin: 0 100px;
-  //   border-bottom: 1px solid #bdbdbd;
-  //   padding-top: 25px;
-  //   padding-left: 0px;
-  //   padding-right: 0px;
-  //   padding-bottom: 0px;
+  @import '../../../styles/app.colors.scss';
 
-  //   .navbar-nav {
-  //     padding-left: 50px;
-  //     padding-top: 15px;
-  //   }
-  // }
+  .navbar {
+    .navbar-nav {
+      padding-bottom: 16px;
+      border-bottom: 1px solid $grey_light_extra;
+    }
+  }
 
   // .navbar-brand {
   //   padding-bottom: 0px;
   // }
 
-  // .nav-link { 
-  //   margin-right: 50px;
-  // }
+  .nav-link { 
+    margin-left: 16px;
+    font-size: 14px;
+  }
 
   // .brand-head {
   //   margin-bottom: 0px;

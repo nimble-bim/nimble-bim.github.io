@@ -8,10 +8,10 @@ export const RoundedButton = props => (
 );
 
 export const TryButton = props => (
-  <RoundedButton text="Try" modifier="try" />
+  <RoundedButton text="Try Now" modifier="try" />
 )
 
-export const HuhButton = props => (
-  <RoundedButton text="Huh?" modifier="huh" />
+export const HowButton = props => (
+  <RoundedButton text="How It Works" modifier="hiw" />
 );
 

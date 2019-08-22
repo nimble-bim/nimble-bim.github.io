@@ -1,19 +1,52 @@
 @import '../../../styles/app.colors.scss';
 
-.button_try {
-  border: 3px solid $tomato;
+.button_round {
+  border: 1px solid $charcoal;
   border-radius: 50px;
-  padding: 25px;
-  color: $tomato;
+  color: $charcoal;
   background-color: $white;
-  font-size: 18px;
+  justify-self: right;
+  align-self: center;
+  width: 75%;
+  height: auto;
+  text-align: center;
 }
 
-.button_huh {
-  border: 3px solid $tomato;
+.button_try {
+  border: 1px solid $tomato;
   border-radius: 50px;
-  padding: 25px;
+  color: $white;
+  background-color: $tomato;
+  justify-self: left;
+  align-self: center;
+  width: 75%;
+  height: auto;
+  text-align: center;
+}
+
+.button_hiw {
+  border: 1px solid $tomato;
+  border-radius: 50px;
   color: $tomato;
   background-color: $white;
-  font-size: 18px;
+  justify-self: right;
+  align-self: center;
+  width: 75%;
+  height: auto;
+  text-align: center;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
 }

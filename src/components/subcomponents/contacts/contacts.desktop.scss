@@ -1,0 +1,22 @@
+@media (min-width: 1440px) {
+
+  @import '../../../styles/app.colors.scss';
+  @import '../../../styles/app.fonts.scss';
+
+  .contact {
+    margin-bottom: 50px;
+  }
+
+  .contact__type {
+    color: $grey_light;
+    font-weight: 700;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .contact__info {
+    color: $charcoal;
+    font-weight: 300;
+    font-size: 12px;
+  }
+}

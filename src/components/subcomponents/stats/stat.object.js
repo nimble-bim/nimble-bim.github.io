@@ -1,5 +1,7 @@
 import React from 'react';
-import './stat.style.scss';
+
+import './stat.desktop.scss';
+import './stat.mobile.scss';
 
 const Stat = (props) => (
   <div className="stat">

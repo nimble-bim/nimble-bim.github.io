@@ -1,0 +1,23 @@
+@media (max-width: 1439px) {
+
+  @import '../../../styles/app.colors.scss';
+  @import '../../../styles/app.fonts.scss';
+
+  .contact {
+    margin-bottom: 16px;
+  }
+
+  .contact__type {
+    color: $grey_light;
+    font-weight: 700;
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  .contact__info {
+    color: $charcoal;
+    font-weight: 300;
+    font-size: 12px;
+  }
+
+}

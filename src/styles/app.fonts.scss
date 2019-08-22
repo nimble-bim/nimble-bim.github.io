@@ -1,6 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700');
-@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,200,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700');
 @import './app.colors.scss';
+
+$desktop_xs: 12px;
+$desktop_sm: 18px;
+$desktop_md: 24px;
+$desktop_lg: 36px;
+$desktop_xl: 48px;
+
+$mobile_xs: 12px;
+$mobile_sm: 14px;
+$mobile_md: 18px;
+$mobile_lg: 24px;
+$mobile_xl: 36px;
+
 
 %brand-head {
   font-family: 'Space Mono', monospace;
@@ -9,6 +22,18 @@
 %brand-body {
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 400;
+  font-size: 18px;
+}
+
+%content__title {
+  font-weight: 300;
+  color: $black;
+  font-size: 36px;
+}
+
+%content__text {
+  white-space: pre-line;
+  font-size: $desktop_md;
 }
 
 .brand-head {
