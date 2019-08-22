@@ -26,7 +26,7 @@ export default class RegistrationPage extends React.Component {
         desc: "Amount of knowledge of BIM necessary"
       },
       { 
-        number: "20K",
+        number: "4500",
         desc: "Amount of knowledge of BIM necessary"
       }
     ]

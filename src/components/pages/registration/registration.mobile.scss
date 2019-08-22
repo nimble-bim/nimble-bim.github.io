@@ -1,23 +1,24 @@
 @media (max-width: 1439px) {
   .page_registration {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     // grid-gap: 20px;
-    padding: 25px;
+    // padding: 25px;
   }
 
   .section {
-    // border: 1px solid red;
+    // height: 100vh;
+    margin-bottom: 100px;
   }
 
   .section_stats {
     // border: 1px solid chocolate;
-    height: 100%;
+    // height: 100%;
     // padding-left: 100px;
   }
 
   .section_register {
     // border: 1px solid chocolate;
-    padding-right: 100px;
+    // padding-right: 100px;
   }
 }

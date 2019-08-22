@@ -1,31 +1,36 @@
-@import '../../../styles/app.fonts.scss';
 
-.blurb {
-}
+@media(max-width: 1439px) {
 
-.blurb_subtitle {
-  color: tomato;
-  font-family: 'Space Mono', monospace;
-  font-size: 18px;
-  font-weight: 700;
-  padding-left: 6px;
+  @import '../../../styles/app.fonts.scss';
 
-  &_empty {
-    margin-bottom: 43px;
+  .blurb {
   }
-}
-
-.blurb_title {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 48px;
-  font-weight: 300;
-  white-space: pre-line;
-  color: $charcoal;
-}
-
-.blurb_content {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  white-space: pre-line;
+  
+  .blurb_subtitle {
+    color: $tomato;
+    font-family: 'Space Mono', monospace;
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 6px;
+  
+    &_empty {
+      margin-bottom: 43px;
+    }
+  }
+  
+  .blurb_title {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    white-space: pre-line;
+    color: $charcoal;
+  }
+  
+  .blurb_content {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    white-space: pre-line;
+    padding-top: 32px;
+  }
 }
