@@ -1,0 +1,48 @@
+@import '../../../styles/app.fonts.scss';
+@import '../../../styles/app.colors.scss';
+
+.feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+}
+
+.feature__image {
+  background: $grey_light;
+  height: 200px;
+  grid-column: 1 / -1;
+}
+
+.feature__number {
+  @extend %brand-head;
+  font-size: 96px;
+  grid-column: 3;
+  grid-row: 3 / 6;
+  align-self: end;
+  color: rgba($charcoal, .5);
+}
+
+.feature__summary {
+  grid-column: 1 / -1;
+  grid-row: 2 / 4;
+}
+
+.feature__next {
+  display:grid;
+  align-content: center;
+  justify-content: left;
+  width: auto;
+
+  p {
+    margin: 0;
+    font-size: 14px;
+    width: auto;
+    border: 2px solid $black;
+    background: $white;
+    padding: 4px 16px;
+  }
+}
+
+.feature__navigation {
+  display: hidden;
+}
