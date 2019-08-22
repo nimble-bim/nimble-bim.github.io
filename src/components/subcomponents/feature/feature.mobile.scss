@@ -20,11 +20,37 @@
   grid-row: 3 / 6;
   align-self: end;
   color: rgba($charcoal, .5);
+  z-index: 2;
+  margin-top: 75%;
 }
 
 .feature__summary {
   grid-column: 1 / -1;
   grid-row: 2 / 4;
+  background-color: rgba($aqua, 1);
+  margin-left: -30px;
+  margin-right: -30px;
+  margin-bottom: -15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+
+  .blurb_subtitle {
+    color: $grey;
+    font-size: $mobile_sm;
+    padding-top: 16px;
+    margin-bottom: 8px;
+    padding-left: 4px;
+  }
+
+  .blurb_title {
+    color: $black;
+    font-weight: 500;
+  }
+
+  .blurb_content {
+    padding-top: 0px;
+  }
 }
 
 .feature__next {
@@ -37,7 +63,7 @@
     margin: 0;
     font-size: 14px;
     width: auto;
-    border: 2px solid $black;
+    border: 1px solid $black;
     background: $white;
     padding: 4px 16px;
   }
