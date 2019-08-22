@@ -8,7 +8,7 @@
 
   .section {
     // height: 100vh;
-    margin-bottom: 100px;
+    margin-bottom: 25px;
   }
 
   .section_stats {
@@ -20,5 +20,9 @@
   .section_register {
     // border: 1px solid chocolate;
     // padding-right: 100px;
+
+    .blurb_title {
+      white-space: nowrap;
+    }
   }
 }
