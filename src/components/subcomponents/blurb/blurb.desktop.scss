@@ -1,0 +1,35 @@
+@media(min-width: 1440px) {
+
+  @import '../../../styles/app.fonts.scss';
+
+  .blurb {
+  }
+  
+  .blurb_subtitle {
+    color: $tomato;
+    font-family: 'Space Mono', monospace;
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 6px;
+  
+    &_empty {
+      margin-bottom: 43px;
+    }
+  }
+  
+  .blurb_title {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 300;
+    white-space: pre-line;
+    color: $charcoal;
+  }
+  
+  .blurb_content {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    white-space: pre-line;
+    padding-top: 32px;
+  }
+}

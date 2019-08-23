@@ -1,12 +1,12 @@
 import React from 'react';
-import './blurb.style.scss';
+import './blurb.desktop.scss';
+import './blurb.mobile.scss';
 
 const Blurb = (props) => {
   return props.blurb_subtitle 
     ? <SubtitledBlurb { ...props } />
     : <UntitledBlurb {...props} />
 }
-
 
 const SubtitledBlurb = props => (
   <div className="blurb">

@@ -51,7 +51,9 @@
     }
 
     .info__button {
+      grid-column: span 2;
       align-self: center;
+      justify-self: center;
       margin-top: 25px;
     }
     

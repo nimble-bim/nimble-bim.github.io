@@ -1,4 +1,7 @@
 @media(min-width: 1440px) {
+  @import '../../../styles/app.fonts.scss';
+  @import '../../../styles/app.colors.scss';
+
   .stat {
     display: grid;
     grid-template-columns: 2fr 4fr;
@@ -10,11 +13,13 @@
     font-size: 72px;
     font-weight: 400;
     justify-self: center;
+    color: $tomato;
   }
 
   .stat_desc {
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 18px;
     align-self: center;
+    padding-left: 25px;
   }
 }
