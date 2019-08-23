@@ -6,7 +6,7 @@
   .feature {
     display: grid;
     grid-template-columns: 3fr 4fr 1fr;
-    grid-template-rows: 2fr 1fr 3fr 1fr auto;
+    grid-template-rows: auto 100px 3fr 100px auto;
     // height: 100%;
   }
 
@@ -25,6 +25,15 @@
     background-color: $aqua;
     margin-left: -115px;
     padding-left: 115px;
+
+    .blurb {
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+
+    .blurb_subtitle {
+      color: $grey;
+    }
   }
 
   .feature__image {
@@ -41,6 +50,25 @@
     grid-row: 3 / 4;
     background-color: $aqua;
     margin-right: -115px;
+
+    display:grid;
+    align-content: center;
+    justify-content: left;
+    padding-left: 50px;
+    width: auto;
+
+    p {
+      margin: 0;
+      font-size: 14px;
+      width: auto;
+      border: 1px solid $black;
+      background: $white;
+      padding: 4px 16px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 
   .feature__navigation {

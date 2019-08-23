@@ -75,6 +75,10 @@
       border: 1px solid $black;
       background: $white;
       padding: 4px 16px;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 
