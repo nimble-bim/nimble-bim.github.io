@@ -35,10 +35,6 @@ export default class HowItWorks extends React.Component{
           <Feature feature={ feature } />
         </div>
 
-        <div className="howitworks__navigation">
-
-        </div>
-
       </div>
     )
   }

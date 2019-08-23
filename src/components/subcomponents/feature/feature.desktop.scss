@@ -1,0 +1,48 @@
+@media (min-width: 1440px) {
+
+  @import '../../../styles/app.fonts.scss';
+  @import '../../../styles/app.colors.scss';
+
+  .feature {
+    display: grid;
+    grid-template-columns: 3fr 4fr 1fr;
+    grid-template-rows: 2fr 3fr 3fr;
+    // height: 100%;
+  }
+
+  .feature__number {
+    border: 1px solid greenyellow;
+    @extend %brand-head;
+    font-size: 96px;
+    color: rgba($charcoal, .5);
+    grid-column: 1 / 4;
+    grid-row: 1;
+  }
+
+  .feature__summary {
+    border: 1px solid black;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .feature__image {
+    border: 1px solid orange;
+    // height: 200px;
+    height: 100%;
+    // background-image: url('./feature.video.gif');
+    // background-size: 100%;
+    // background-position: center center;
+    // background-repeat: no-repeat;
+  }
+
+  
+
+  .feature__next {
+    border: 1px solid blue;
+  }
+
+  .feature__navigation {
+    border: 1px solid red;
+    grid-column: 1 / -1;
+  }
+}
