@@ -18,6 +18,14 @@
         color: $grey_light;
       }
     }
+
+    &:focus {
+      border-bottom: 2px solid $charcoal;
+    }
+
+    &:focus-within {
+      border-bottom: 2px solid $charcoal;
+    }
   }
 
   .registrar {
@@ -59,10 +67,14 @@
     
     .button_register {
       border: 1px solid $tomato;
-      background: $tomato;
+      background-color: $tomato;
       color: $white;
       padding-left: 50px;
       padding-right: 50px;
+
+      &:hover {
+        background-color: rgba($tomato, .7);
+      }
     }
   }
 }

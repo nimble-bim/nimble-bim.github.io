@@ -10,6 +10,10 @@
   width: 75%;
   height: auto;
   text-align: center;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .button_try {
