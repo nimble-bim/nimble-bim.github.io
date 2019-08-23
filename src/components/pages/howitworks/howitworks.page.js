@@ -31,9 +31,9 @@ export default class HowItWorks extends React.Component{
     return (
       <div className="page page_howitworks">
         
-        <div className="howitworks__feature">
+        {/* <div className="howitworks__feature"> */}
           <Feature feature={ feature } />
-        </div>
+        {/* </div> */}
 
       </div>
     )
