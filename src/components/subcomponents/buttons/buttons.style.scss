@@ -1,40 +1,29 @@
 @import '../../../styles/app.colors.scss';
+@import "../../../styles/app.fonts.scss";
 
-.button_round {
+.button {
   border: 1px solid $charcoal;
-  border-radius: 50px;
   color: $charcoal;
   background-color: $white;
-  justify-self: right;
-  align-self: center;
   width: 75%;
   height: auto;
   text-align: center;
 }
 
-.button_try {
-  border: 1px solid $tomato;
+.button_round {
   border-radius: 50px;
+}
+
+.button_primary {
+  border: 1px solid $tomato;
   color: $white;
   background-color: $tomato;
-  justify-self: left;
-  align-self: center;
-  width: 75%;
-  height: auto;
-  text-align: center;
 }
 
-.button_hiw {
+.button_secondary {
   border: 1px solid $tomato;
-  border-radius: 50px;
   color: $tomato;
   background-color: $white;
-  justify-self: right;
-  align-self: center;
-  width: 75%;
-  height: auto;
-  text-align: center;
-  white-space: nowrap;
 }
 
 @media (min-width: 768px) {

@@ -1,0 +1,48 @@
+@import "../../../styles/app.colors.scss";
+@import "../../../styles/app.fonts.scss";
+
+.card {
+  border: none;
+  height: auto;
+
+  &__image {
+    text-align: center;
+  }
+
+  &__image-frame {
+    padding: 3em 0;
+    width: auto;
+    max-height: 18em;
+  }
+
+  &__title {
+    @extend %brand-head;
+    text-align: left;
+  }
+
+  &__number-title {
+    @extend %brand-head;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+  }
+
+  &__text {
+    font-size: 1em;
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    max-height: 64em;
+  }
+}
+
+@media (max-width: 767px) {
+  .card {
+    max-height: 64em;
+  }
+}

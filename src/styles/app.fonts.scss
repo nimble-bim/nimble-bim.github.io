@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700');
 @import './app.colors.scss';
 
-$desktop_xs: 12px;
-$desktop_sm: 18px;
-$desktop_md: 24px;
-$desktop_lg: 36px;
-$desktop_xl: 48px;
+$desktop_xs: 0.75em;
+$desktop_sm: 1em;
+$desktop_md: 1.25em;
+$desktop_lg: 2em;
+$desktop_xl: 3em;
 
 $mobile_xs: 12px;
 $mobile_sm: 14px;
@@ -22,13 +22,13 @@ $mobile_xl: 36px;
 %brand-body {
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1em;
 }
 
 %content__title {
   font-weight: 300;
   color: $black;
-  font-size: 36px;
+  font-size: 2em;
 }
 
 %content__text {
@@ -38,7 +38,7 @@ $mobile_xl: 36px;
 
 .brand-head {
   @extend %brand-head;
-  font-size: 36px;
+  font-size: 2em;
 }
 
 body {
@@ -46,32 +46,38 @@ body {
   color: $charcoal;
   
   h1 {
-    font-size: 48px;
+    font-size: 3em;
     text-transform: capitalize; 
   }
 
   h2 {
-    font-size: 36px;
-    text-transform: capitalize; 
+    font-size: 2.5em;
+    text-transform: capitalize;
   }
 
   h3 {
-    font-size: 24px;
+    font-size: 1.5em;
     text-transform: capitalize; 
   }
 
   h4 {
-    font-size: 12px;
+    font-size: 1.25em;
     text-transform: capitalize; 
   }
 
+  h5 {
+    font-size: 0.75em;
+    text-transform: capitalize; 
+    font-weight: 700;
+  }
+
   div {
-    font-size: 18px;
+    font-size: 1em;
     color: $grey;
   }
 
   a {
-    font-size: 18px;
+    font-size: 1em;
     color: $grey;
   }
 }

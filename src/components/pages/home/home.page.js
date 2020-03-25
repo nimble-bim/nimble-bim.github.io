@@ -1,38 +1,120 @@
-import React from 'react';
-import { TryButton, HowButton } from '../../subcomponents/buttons/buttons.object';
-import './home.desktop.scss';
-import './home.mobile.scss';
+import React from "react";
+import "./home.desktop.scss";
+import "./home.mobile.scss";
+import { DLButton } from "../../subcomponents/buttons/buttons.object";
+import { Card } from "../../subcomponents/cards/cards.object";
+import img_card01 from "../../img/folder-man.svg";
+import img_card02 from "../../img/active_options.svg";
+import img_card03 from "../../img/break_fix.svg";
 
 export default class HomePage extends React.Component {
   constructor(props) {
     super(props);
-    console.log('Issa home page');
+    console.log("Issa home page");
   }
 
   render() {
-    const cta_content = 
-      `We know working with Revit can be hard sometimes, so we created a product with a singular purpose - to make it easier for users to design using BIM. 
-      
-      Design, collaborate and fix things before they break - with Nimble.`
+    const header_content = `Welcome to the future, we’ve been waiting for you.
+
+    Get work done faster and fix things before they break - with Nimble.`;
 
     return (
-      <div className="page page_home home">
-
-        <div className="home__cta">
-          <span className="cta__tagline">Advance Further, Faster</span>
-          <h1 className="cta__title">We Make Working With Revit Easier</h1>
-          <p className="cta__content">
-            {cta_content}
-          </p>
-          <div className="cta__buttons">
-            <TryButton />
-            <HowButton />
+      <div className="page">
+        <div className="home header">
+          <div className="header__container">
+            <h1 className="header__title">Working With Revit Made Easy</h1>
+          </div>
+          <div className="header__divider" />
+          <div className="header__container">
+            <span className="tagline">Advance Further, Faster</span>
+            <p className="header__content">{header_content}</p>
+            <DLButton />
           </div>
         </div>
-        
-        <div className="home__video" />
+        <div className="home cards">
+          <div className="cards__title">
+            <span className="tagline">How it works</span>
+            <h2 className="cards__title-text">Behind the Magic of Nimble</h2>
+          </div>
+          <div>
+            <div className="cards__container">
+              <Card
+                image={img_card01}
+                title="Download the Installer"
+                no="01"
+                text="Much of that change is being driven by huge strides in technology since the start of the 21st century. However, for many in the architectural services industry, we‘ve found that much of that progress hasn’t made its way over. Sure, we’ve got drones and laser scanning on the Construction Side, along with some Virtual/Augmented Reality tech but for the average designer, it’s still 1999."
+              />
+              <Card
+                image={img_card02}
+                title="We Run in the Background of Revit"
+                no="02"
+                text="Much of that change is being driven by huge strides in technology since the start of the 21st century. However, for many in the architectural services industry, we‘ve found that much of that "
+              />
+              <Card
+                image={img_card03}
+                title="If You Break It, We Fix It"
+                no="03"
+                text="Much of that change is being driven by huge strides in technology since the start of the 21st century. However, for many in the architectural services industry, we‘ve found that much of that progress hasn’t made its way over. Sure, we’ve got drones and laser erage designer, it’s still 1999."
+              />
+            </div>
+          </div>
+        </div>
+        <div className="home">
+          <span className="tagline">Why Use Nimble?</span>
+          <div className="signup">
+            <div className="signup__why">
+              <h2 className="signup__title">
+                Wouldn’t It Be Nice To Go Home On Time For Once?
+              </h2>
+              <p className="signup__why-content">
+                We’ve streamlined this process to eliminate fees, unnecessary
+                steps, and time-wasting appointments. Our efficiency not only
+                makes it easier to buy a home, it translates into the best rates
+                available.
+              </p>
+              <div className="signup__why-exp">
+                <h2 className="signup__why-exp-no">0</h2>
+                <p>Amount of things about BIM knowledge</p>
+              </div>
+              <div className="signup__why-exp">
+                <h2 className="signup__why-exp-no">20K</h2>
+                <p>Amount of things about BIM knowledge</p>
+              </div>
+            </div>
+            <div className="signup__divider" />
+            <form className="signup__try">
+              <h2>Try It For Free</h2>
+              <p>Nimble is currently in limited beta.</p>
+              <p>Register below to get access to the blha blah thing</p>
+              <h4>Information</h4>
+              <div className="signup__input-2">
+                <input
+                  className="input"
+                  type="text"
+                  id="fname"
+                  value="First Name"
+                />
+                <input
+                  className="input"
+                  type="text"
+                  id="lname"
+                  value="Last Name"
+                />
+              </div>
+              <div className="signup__input-1">
+                <input
+                  className="input"
+                  type="email"
+                  id="email"
+                  value="email"
+                />
+              </div>
 
+              <DLButton />
+            </form>
+          </div>
+        </div>
       </div>
-    )
+    );
   }
 }

@@ -1,53 +1,122 @@
-@media (min-width: 1440px) {
-  @import '../../../styles/app.fonts.scss';
-  @import '../../../styles/app.colors.scss';
+@media (min-width: 960px) {
+  @import "../../../styles/app.fonts.scss";
+  @import "../../../styles/app.colors.scss";
+
+  .page {
+    font-size: 1.125em;
+  }
+
+  .tagline {
+    @extend %brand-head;
+    font-size: 1.125em;
+    font-weight: 700;
+    color: $tomato;
+    align-self: center;
+  }
 
   .home {
     display: grid;
-    grid-template-columns: 2fr 3fr ;
-    grid-gap: 50px;
-    padding: 150px 0;
+    padding: 8em 0;
+    max-width: 64em;
+    margin: 0 auto;
   }
 
-  .home__cta {
-    grid-row: span 3;
-    display: grid;
-    grid-template-rows: auto auto auto auto auto auto auto auto auto;
-    width: 500px;
+  .header {
+    gap: 2em;
+    grid-template-columns: 3.875fr 0.125fr 2fr;
 
-    .cta__tagline {
-      @extend %brand-head;
-      font-size: 18px;
-      font-weight: 700;
-      color: $tomato;
+    // .cta__container
+    &__container {
       align-self: center;
+      display: grid;
     }
 
-    .cta__title {
+    &__divider {
+      align-self: center;
+      width: 1px;
+      height: 12em;
+      background-color: $grey-light;
+    }
+
+    // .cta__title
+    &__title {
       @extend %brand-body;
       font-weight: 400;
       color: $black;
-      font-size: 60px;
+      font-size: 4em;
     }
 
-    .cta__content {
+    // .cta__content
+    &__content {
       @extend %brand-body;
-      margin-top: 20px;
+      margin-top: 1.25em;
       white-space: pre-line;
     }
   }
 
-  .cta__buttons {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-self: end;
+  .cards {
+    &__container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-gap: 3em;
+    }
+
+    &__title-text {
+      @extend %brand-body;
+      font-weight: 400;
+      color: $black;
+      font-size: 4em;
+    }
   }
 
-  .home__video {
-    grid-row: span 3;
-    background-image: url('./home.video.gif');
-    background-size: 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
+  .signup {
+    display: grid;
+    grid-template-columns: 4fr 0.25fr 4fr;
+    gap: 3em;
+
+    &__title {
+      margin-bottom: 3em;
+    }
+
+    &__why-exp {
+      display: grid;
+      grid-template-columns: 2fr 4fr;
+      gap: 2em;
+    }
+
+    &__why-content {
+      margin-bottom: 3em;
+    }
+
+    &__why-exp-no {
+      @extend %brand-head;
+    }
+
+    &__divider {
+      align-self: center;
+      width: 1px;
+      height: 12em;
+      background-color: $grey-light;
+    }
+
+    &__try {
+      display: grid;
+    }
+
+    &__input-1 {
+      display: grid;
+    }
+
+    &__input-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1em;
+    }
+  }
+
+  .input {
+    padding: 0.25em 0.5em;
+    width: 100%;
+    margin-bottom: 1em;
   }
 }
