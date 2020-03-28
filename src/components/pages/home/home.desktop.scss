@@ -1,55 +1,42 @@
-@media (min-width: 960px) {
+@media (min-width: 992px) {
   @import "../../../styles/app.fonts.scss";
   @import "../../../styles/app.colors.scss";
-
-  .page {
-    font-size: 1.125em;
-  }
-
-  .tagline {
-    @extend %brand-head;
-    font-size: 1.125em;
-    font-weight: 700;
-    color: $tomato;
-    align-self: center;
-  }
 
   .home {
     display: grid;
     padding: 8em 0;
-    max-width: 64em;
+    max-width: 54rem;
     margin: 0 auto;
   }
 
   .header {
-    gap: 2em;
+    gap: 2rem;
     grid-template-columns: 3.875fr 0.125fr 2fr;
 
-    // .cta__container
     &__container {
       align-self: center;
       display: grid;
     }
 
     &__divider {
+      display: block;
       align-self: center;
+      justify-self: center;
       width: 1px;
-      height: 12em;
-      background-color: $grey-light;
+      height: 12rem;
+      background-color: $grey-light-extra;
     }
 
-    // .cta__title
     &__title {
-      @extend %brand-body;
+      font-family: $font-body;
       font-weight: 400;
       color: $black;
-      font-size: 4em;
+      font-size: $text-xxxl;
     }
 
-    // .cta__content
     &__content {
-      @extend %brand-body;
-      margin-top: 1.25em;
+      font-family: $font-body;
+      margin-top: 1.25rem;
       white-space: pre-line;
     }
   }
@@ -58,65 +45,31 @@
     &__container {
       display: grid;
       grid-template-columns: auto auto auto;
-      grid-gap: 3em;
+      grid-gap: 3rem;
     }
 
     &__title-text {
-      @extend %brand-body;
+      font-family: $font-body;
       font-weight: 400;
       color: $black;
-      font-size: 4em;
+      font-size: $text-xxl;
     }
   }
 
-  .signup {
+  .registration {
     display: grid;
-    grid-template-columns: 4fr 0.25fr 4fr;
-    gap: 3em;
-
-    &__title {
-      margin-bottom: 3em;
-    }
-
-    &__why-exp {
-      display: grid;
-      grid-template-columns: 2fr 4fr;
-      gap: 2em;
-    }
-
-    &__why-content {
-      margin-bottom: 3em;
-    }
-
-    &__why-exp-no {
-      @extend %brand-head;
-    }
-
-    &__divider {
-      align-self: center;
-      width: 1px;
-      height: 12em;
-      background-color: $grey-light;
-    }
-
-    &__try {
-      display: grid;
-    }
-
-    &__input-1 {
-      display: grid;
-    }
-
-    &__input-2 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1em;
-    }
+    grid-template-columns: 4fr 1fr 4fr;
+    gap: 2rem;
   }
 
-  .input {
-    padding: 0.25em 0.5em;
-    width: 100%;
-    margin-bottom: 1em;
+  .section {
+    &__divider {
+      display: block;
+      align-self: center;
+      justify-self: center;
+      width: 1px;
+      height: 12rem;
+      background-color: $grey-light-extra;
+    }
   }
 }

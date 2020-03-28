@@ -1,11 +1,17 @@
 import React from "react";
-import "./home.desktop.scss";
 import "./home.mobile.scss";
+import "./home.desktop.scss";
 import { DLButton } from "../../subcomponents/buttons/buttons.object";
 import { Card } from "../../subcomponents/cards/cards.object";
+
+//images
 import img_card01 from "../../img/folder-man.svg";
 import img_card02 from "../../img/active_options.svg";
 import img_card03 from "../../img/break_fix.svg";
+
+import Blurb from "../../subcomponents/blurb/blurb.object";
+import Stats from "../../subcomponents/stats/stats.object";
+import Registrar from "../../subcomponents/registrar/registrar.object";
 
 export default class HomePage extends React.Component {
   constructor(props) {
@@ -14,9 +20,35 @@ export default class HomePage extends React.Component {
   }
 
   render() {
+    //----header content----
     const header_content = `Welcome to the future, we’ve been waiting for you.
 
     Get work done faster and fix things before they break - with Nimble.`;
+
+    const statHeaderContent =
+      "We’ve streamlined this process to eliminate fees, unnecessary steps, and time-wasting appointments. Our efficiency not only makes it easier to buy a home, it translates into the best rates available.";
+
+    //-------registration content-------
+
+    const stats_title = "Wouldn’t It Be Nice To Go Home On Time For Once?";
+    const register_title = "Try It For Free";
+
+    const register_content =
+      "Nimble is currently in limited beta. Register below to get access to the blah blah thing.";
+    const stats = [
+      {
+        number: "0",
+        desc: "Amount of knowledge of BIM necessary"
+      },
+      {
+        number: "20K",
+        desc: "Amount of knowledge of BIM necessary"
+      },
+      {
+        number: "4500",
+        desc: "Amount of knowledge of BIM necessary"
+      }
+    ];
 
     return (
       <div className="page">
@@ -59,7 +91,31 @@ export default class HomePage extends React.Component {
             </div>
           </div>
         </div>
+
         <div className="home">
+          <span className="tagline">Why Use Nimble?</span>
+          <div className="registration">
+            <div className="section section__stats">
+              <Blurb
+                blurb_title={stats_title}
+                blurb_content={statHeaderContent}
+              />
+              <Stats info={stats} />
+            </div>
+
+            <div className="section__divider"></div>
+
+            <div className="section section__register">
+              <Blurb
+                blurb_title={register_title}
+                blurb_content={register_content}
+              />
+              <Registrar />
+            </div>
+          </div>
+        </div>
+
+        {/* <div className="home">
           <span className="tagline">Why Use Nimble?</span>
           <div className="signup">
             <div className="signup__why">
@@ -83,7 +139,7 @@ export default class HomePage extends React.Component {
             </div>
             <div className="signup__divider" />
             <form className="signup__try">
-              <h2>Try It For Free</h2>
+              <h2 className="signup__title">Try It For Free</h2>
               <p>Nimble is currently in limited beta.</p>
               <p>Register below to get access to the blha blah thing</p>
               <h4>Information</h4>
@@ -113,7 +169,7 @@ export default class HomePage extends React.Component {
               <DLButton />
             </form>
           </div>
-        </div>
+        </div> */}
       </div>
     );
   }

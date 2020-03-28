@@ -1,4 +1,4 @@
-@media(min-width: 1440px) {
+@media(min-width: 1200px) {
 
   @import '../../../styles/app.fonts.scss';
   @import '../../../styles/app.colors.scss';
@@ -14,7 +14,7 @@
       padding-left: 16px;
 
       &::placeholder{
-        @extend %brand-body;
+        font-family: $font-body;
         color: $grey_light;
       }
     }
@@ -25,7 +25,7 @@
     grid-template-rows: auto auto auto auto;
 
     .registrar__title {
-      @extend %brand-body;
+      font-family: $font-body;
       font-weight: 700;
       margin-top: 48px;
       margin-bottom: 48px;

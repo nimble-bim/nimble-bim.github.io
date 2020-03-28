@@ -4,6 +4,7 @@
 .card {
   border: none;
   height: auto;
+  max-height: 64em;
 
   &__image {
     text-align: center;
@@ -16,12 +17,13 @@
   }
 
   &__title {
-    @extend %brand-head;
+    font-family: $font-head;
     text-align: left;
+    font-weight: 700;
   }
 
   &__number-title {
-    @extend %brand-head;
+    font-family: $font-head;
   }
 
   &__content {
@@ -32,17 +34,5 @@
   &__text {
     font-size: 1em;
     text-align: left;
-  }
-}
-
-@media (min-width: 768px) {
-  .card {
-    max-height: 64em;
-  }
-}
-
-@media (max-width: 767px) {
-  .card {
-    max-height: 64em;
   }
 }

@@ -1,36 +1,18 @@
+@import "../../../styles/app.fonts.scss";
 
-@media(max-width: 1439px) {
+.blurb {
 
-  @import '../../../styles/app.fonts.scss';
+  display: grid;
+  gap: 1rem;
 
-  .blurb {
-  }
-  
-  .blurb_subtitle {
-    color: $tomato;
-    font-family: 'Space Mono', monospace;
-    font-size: 18px;
+  &__title {
+    font-family: $font-body;
     font-weight: 700;
-    padding-left: 6px;
-  
-    &_empty {
-      margin-bottom: 43px;
-    }
+    // white-space: pre-line;
   }
-  
-  .blurb_title {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 36px;
-    font-weight: 300;
-    white-space: pre-line;
-    color: $charcoal;
-  }
-  
-  .blurb_content {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    white-space: pre-line;
-    padding-top: 32px;
+
+  &__content {
+    font-family: $font-body;
+    // white-space: pre-line;
   }
 }

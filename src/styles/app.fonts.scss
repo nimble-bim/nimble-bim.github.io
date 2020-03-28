@@ -1,83 +1,91 @@
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,200,300,400,700');
-@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700');
-@import './app.colors.scss';
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,200,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Space+Mono:400,700");
+@import "./app.colors.scss";
 
-$desktop_xs: 0.75em;
-$desktop_sm: 1em;
-$desktop_md: 1.25em;
-$desktop_lg: 2em;
-$desktop_xl: 3em;
+$text-xs: 0.75rem;
+$text-sm: 1rem;
+$text-md: 1.25rem;
+$text-lg: 1.5rem;
+$text-xl: 2rem;
+$text-xxl: 3rem;
+$text-xxxl: 4rem;
 
-$mobile_xs: 12px;
-$mobile_sm: 14px;
-$mobile_md: 18px;
-$mobile_lg: 24px;
-$mobile_xl: 36px;
+$font-head: "Space Mono", monospace;
+$font-body: "IBM Plex Sans", sans-serif;
 
+// %brand-head {
+//   font-family: "Space Mono", monospace;
+// }
 
-%brand-head {
-  font-family: 'Space Mono', monospace;
-}
+// %brand-body {
+//   font-family: "IBM Plex Sans", sans-serif;
+//   font-size: $text-sm;
+// }
 
-%brand-body {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-weight: 400;
-  font-size: 1em;
-}
-
-%content__title {
+%content-title {
   font-weight: 300;
   color: $black;
-  font-size: 2em;
+  font-size: $text-lg;
 }
 
-%content__text {
+%content-subtitle {
+  font-weight: 700;
+  color: $tomato;
+  font-size: $text-sm;
+}
+
+%content-text {
   white-space: pre-line;
-  font-size: $desktop_md;
+  font-size: $text-md;
 }
 
 .brand-head {
-  @extend %brand-head;
-  font-size: 2em;
+  font-family: $font-head;
+  font-size: 2rem;
+}
+
+.tagline {
+  font-family: $font-head;
+  font-size: $text-md;
+  font-weight: 700;
+  color: $tomato;
 }
 
 body {
-  @extend %brand-body;
+  font-family: $font-body;
   color: $charcoal;
-  
+
   h1 {
-    font-size: 3em;
-    text-transform: capitalize; 
+    font-size: $text-xxl;
+    text-transform: capitalize;
   }
 
   h2 {
-    font-size: 2.5em;
+    font-size: $text-xl;
     text-transform: capitalize;
   }
 
   h3 {
-    font-size: 1.5em;
-    text-transform: capitalize; 
+    font-size: $text-lg;
+    text-transform: capitalize;
   }
 
   h4 {
-    font-size: 1.25em;
-    text-transform: capitalize; 
+    font-size: $text-md;
+    text-transform: capitalize;
   }
 
   h5 {
-    font-size: 0.75em;
-    text-transform: capitalize; 
+    font-size: $text-xs;
+    text-transform: capitalize;
     font-weight: 700;
   }
 
-  div {
-    font-size: 1em;
+  p {
     color: $grey;
   }
 
   a {
-    font-size: 1em;
     color: $grey;
   }
 }

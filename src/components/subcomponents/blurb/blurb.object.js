@@ -10,17 +10,16 @@ const Blurb = (props) => {
 
 const SubtitledBlurb = props => (
   <div className="blurb">
-    <p className="blurb_subtitle">{props.blurb_subtitle}</p>
-    <h1 className="blurb_title">{props.blurb_title}</h1>
-    <p className="blurb_content">{props.blurb_content}</p>
+    <p className="tagline">{props.blurb_subtitle}</p>
+    <h2 className="blurb__title">{props.blurb_title}</h2>
+    <p className="blurb__content">{props.blurb_content}</p>
   </div>
 )
 
 const UntitledBlurb = props => (
   <div className="blurb">
-    <p className="blurb_subtitle_empty"></p>
-    <h1 className="blurb_title">{props.blurb_title}</h1>
-    <p className="blurb_content">{props.blurb_content}</p>
+    <h2 className="blurb__title">{props.blurb_title}</h2>
+    <p className="blurb__content">{props.blurb_content}</p>
   </div>
 )
 
