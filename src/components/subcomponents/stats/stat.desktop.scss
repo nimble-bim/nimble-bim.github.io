@@ -1,20 +1,2 @@
 @media(min-width: 1200px) {
-  .stat {
-    display: grid;
-    grid-template-columns: 2fr 4fr;
-    margin: 50px 0;
-  }
-
-  .stat_number {
-    font-family: 'Space Mono', monospace;
-    font-size: 72px;
-    font-weight: 400;
-    justify-self: center;
-  }
-
-  .stat_desc {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 18px;
-    align-self: center;
-  }
 }
