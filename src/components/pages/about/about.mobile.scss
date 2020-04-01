@@ -3,50 +3,21 @@
 
 .about {
   display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 1fr 1fr;
-}
+  gap: 1rem;
 
-.about__mission {
-  .mission__text {
-    color: $grey-light;
-    text-transform: none;
-    font-weight: 400;
-    padding-right: 32px;
-    font-size: 18px;
+  &__container {
+    display: grid;
+    gap: 0.75rem;
+    align-content: flex-start;
+  }
+
+  &__mission-text {
+    color: $grey;
   }
 }
 
-.about__contact {
-  .contact__text {
-    color: $grey-light;
-    text-transform: none;
-    font-weight: 400;
-    padding-right: 32px;
-    font-size: 18px;
-  }
-}
-
-.about__content {
-  grid-column: span 2;
-  margin-top: 32px;
-
-  .content__title {
-    font-weight: 300;
-    color: $black;
-    font-size: 36px;
-  }
-
-  .content__text {
+.content {
+  &__text{
     white-space: pre-line;
-    font-size: 14px;
   }
-}
-.about__news {
-  // border: 1px solid seagreen;
-  grid-column: span 2;
-}
-.about__timeline {
-  // border: 1px solid seagreen;
-  grid-column: span 2;
 }

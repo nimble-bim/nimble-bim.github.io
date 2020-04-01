@@ -1,8 +1,8 @@
 import React from "react";
-import { Navbar, Nav, NavDropdown } from "react-bootstrap";
-import "./navbar.general.scss";
 import "./navbar.mobile.scss";
 import "./navbar.desktop.scss";
+import "./navbar.general.scss";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 
 const defaultState = {
   collapsed: true
@@ -21,7 +21,7 @@ class NavbarElement extends React.Component {
   }
 
   render() {
-    const { app } = this.props.settings;
+    // const { app } = this.props.settings;
     const theme = "bright";
     // const theme = app.useDarkTheme ? 'dark' : 'bright';
 
@@ -42,18 +42,24 @@ class NavbarElement extends React.Component {
           <span className={`fa fa-bars ${theme}`} />
         </Navbar.Toggle>
         <Navbar.Collapse>
-          <Nav className="mr-auto">
-            <Nav.Link href="about" className={theme}>
-              About Us
-            </Nav.Link>
-            <Nav.Link href="how" className={theme}>
-              Features
-            </Nav.Link>
-            <Nav.Link href="news" className={theme}>
-              News
-            </Nav.Link>
+          <Nav variant="pills" className="mr-auto">
+            <Nav.Item>
+              <Nav.Link href="/about" className={theme}>
+                About Us
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link href="/features" className={theme}>
+                Features
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link href="news" className={theme}>
+                News
+              </Nav.Link>
+            </Nav.Item>
           </Nav>
-          <Nav className="navbar-nav-left justify-content-end">
+          <Nav variant="pills" className="navbar-nav-left justify-content-end">
             <Nav.Link href="try" className={`nav-link-left ${theme}`}>
               Download
             </Nav.Link>

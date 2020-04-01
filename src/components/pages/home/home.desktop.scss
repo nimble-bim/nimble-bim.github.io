@@ -19,15 +19,6 @@
       display: grid;
     }
 
-    &__divider {
-      display: block;
-      align-self: center;
-      justify-self: center;
-      width: 1px;
-      height: 12rem;
-      background-color: $grey-light-extra;
-    }
-
     &__title {
       font-family: $font-body;
       font-weight: 400;
@@ -61,16 +52,5 @@
     display: grid;
     grid-template-columns: 4fr 1fr 4fr;
     gap: 2rem;
-  }
-
-  .section {
-    &__divider {
-      display: block;
-      align-self: center;
-      justify-self: center;
-      width: 1px;
-      height: 12rem;
-      background-color: $grey-light-extra;
-    }
   }
 }

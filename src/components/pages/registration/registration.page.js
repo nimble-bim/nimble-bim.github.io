@@ -25,10 +25,6 @@ export default class RegistrationPage extends React.Component {
       {
         number: "20K",
         desc: "Amount of knowledge of BIM necessary"
-      },
-      {
-        number: "4500",
-        desc: "Amount of knowledge of BIM necessary"
       }
     ];
 
@@ -36,22 +32,26 @@ export default class RegistrationPage extends React.Component {
     const register_title = "Try It For Free \n\n";
 
     return (
-      <div className="page page_registration">
-        <div className="section section__stats">
-          <Blurb
-            blurb_subtitle="Why Use Nimble"
-            blurb_title={stats_title}
-            blurb_content={statHeaderContent}
-          />
-          <Stats info={stats} />
-        </div>
+      <div className="page">
+        <span className="tagline">Why Use Nimble?</span>
+        <div className="registration">
+          <div className="section section__stats">
+            <Blurb
+              blurb_title={stats_title}
+              blurb_content={statHeaderContent}
+            />
+            <Stats info={stats} />
+          </div>
 
-        <div className="section section__register">
-          <Blurb
-            blurb_title={register_title}
-            blurb_content={register_content}
-          />
-          <Registrar />
+          <div className="section__divider" />
+
+          <div className="section section__register">
+            <Blurb
+              blurb_title={register_title}
+              blurb_content={register_content}
+            />
+            <Registrar />
+          </div>
         </div>
       </div>
     );

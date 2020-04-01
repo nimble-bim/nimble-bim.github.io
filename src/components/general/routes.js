@@ -23,7 +23,7 @@ export class Routes extends React.Component {
             <Switch>
               <Route exact path='/' render={(props) => (<Home {...this.props} {...props}/>)} />
               <Route exact path='/about' render={(props) => (<About {...this.props} {...props}/>)} />
-              <Route exact path='/how' render={(props) => (<HowItWorks {...this.props} {...props}/>)} />
+              <Route exact path='/features' render={(props) => (<HowItWorks {...this.props} {...props}/>)} />
               <Route exact path='/try' render={(props) => (<Register {...this.props} {...props}/>)} />
               <Route component={Notfound} />
             </Switch>

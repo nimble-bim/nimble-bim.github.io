@@ -1,20 +1,4 @@
-.page_registration {
+.registration {
   display: grid;
-  grid-template-columns: auto;
-}
-
-.section {
-  margin-bottom: 25px;
-}
-
-.section_stats {
-}
-
-.section_register {
-  // border: 1px solid chocolate;
-  // padding-right: 100px;
-
-  .blurb_title {
-    white-space: nowrap;
-  }
+  gap: 2rem;
 }

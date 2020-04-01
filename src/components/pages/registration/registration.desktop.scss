@@ -1,17 +1,9 @@
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   @import "../../../styles/app.colors.scss";
 
-  .page_registration {
+  .registration {
     display: grid;
-    grid-template-columns: 4fr 4fr;
-    gap: 3em;
-  }
-
-  .section {
-    &__stats {
-    }
-
-    &__register {
-    }
+    grid-template-columns: 4fr 1fr 4fr;
+    gap: 2rem;
   }
 }

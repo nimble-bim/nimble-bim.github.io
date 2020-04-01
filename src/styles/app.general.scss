@@ -25,11 +25,30 @@ body {
 }
 
 .app-content {
-  margin: 1em 1rem;
+  margin: 1rem 1rem;
 }
 
 .page {
   height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+.section {
+  display: grid;
+  gap: 1rem;
+
+  &__divider {
+    display: none;
+  }
+}
+
+.tagline {
+  font-family: $font-head;
+  font-size: $text-md;
+  font-weight: 700;
+  color: $tomato;
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -45,6 +64,24 @@ body {
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+  .page {
+    display: grid;
+    gap: 0.5rem;
+    padding-top: 2em;
+    width: 60rem;
+    margin: 0 auto;
+  }
+
+  .section {
+    &__divider {
+      display: grid;
+      align-self: center;
+      justify-self: center;
+      width: 1px;
+      height: 75%;
+      background-color: $grey-light-extra;
+    }
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)

@@ -43,10 +43,6 @@ export default class HomePage extends React.Component {
       {
         number: "20K",
         desc: "Amount of knowledge of BIM necessary"
-      },
-      {
-        number: "4500",
-        desc: "Amount of knowledge of BIM necessary"
       }
     ];
 
@@ -56,7 +52,7 @@ export default class HomePage extends React.Component {
           <div className="header__container">
             <h1 className="header__title">Working With Revit Made Easy</h1>
           </div>
-          <div className="header__divider" />
+          <div className="section__divider" />
           <div className="header__container">
             <span className="tagline">Advance Further, Faster</span>
             <p className="header__content">{header_content}</p>
@@ -114,62 +110,6 @@ export default class HomePage extends React.Component {
             </div>
           </div>
         </div>
-
-        {/* <div className="home">
-          <span className="tagline">Why Use Nimble?</span>
-          <div className="signup">
-            <div className="signup__why">
-              <h2 className="signup__title">
-                Wouldn’t It Be Nice To Go Home On Time For Once?
-              </h2>
-              <p className="signup__why-content">
-                We’ve streamlined this process to eliminate fees, unnecessary
-                steps, and time-wasting appointments. Our efficiency not only
-                makes it easier to buy a home, it translates into the best rates
-                available.
-              </p>
-              <div className="signup__why-exp">
-                <h2 className="signup__why-exp-no">0</h2>
-                <p>Amount of things about BIM knowledge</p>
-              </div>
-              <div className="signup__why-exp">
-                <h2 className="signup__why-exp-no">20K</h2>
-                <p>Amount of things about BIM knowledge</p>
-              </div>
-            </div>
-            <div className="signup__divider" />
-            <form className="signup__try">
-              <h2 className="signup__title">Try It For Free</h2>
-              <p>Nimble is currently in limited beta.</p>
-              <p>Register below to get access to the blha blah thing</p>
-              <h4>Information</h4>
-              <div className="signup__input-2">
-                <input
-                  className="input"
-                  type="text"
-                  id="fname"
-                  value="First Name"
-                />
-                <input
-                  className="input"
-                  type="text"
-                  id="lname"
-                  value="Last Name"
-                />
-              </div>
-              <div className="signup__input-1">
-                <input
-                  className="input"
-                  type="email"
-                  id="email"
-                  value="email"
-                />
-              </div>
-
-              <DLButton />
-            </form>
-          </div>
-        </div> */}
       </div>
     );
   }

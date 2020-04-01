@@ -1,22 +1,8 @@
 @media (min-width: 1200px) {
-
-  @import '../../../styles/app.colors.scss';
-  @import '../../../styles/app.fonts.scss';
+  @import "../../../styles/app.colors.scss";
+  @import "../../../styles/app.fonts.scss";
 
   .contact {
-    margin-bottom: 50px;
-  }
-
-  .contact__type {
-    color: $grey_light;
-    font-weight: 700;
-    font-size: 12px;
-    margin-bottom: 10px;
-  }
-
-  .contact__info {
-    color: $charcoal;
-    font-weight: 300;
-    font-size: 12px;
+    grid-template-columns: 1fr 2fr;
   }
 }

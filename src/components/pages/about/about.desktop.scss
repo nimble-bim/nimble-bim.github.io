@@ -1,58 +1,11 @@
 @import '../../../styles/app.fonts.scss';
 @import '../../../styles/app.colors.scss';
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
 
   .about {
-    display: grid;
-    grid-template-columns: 200px 3fr 325px;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-column-gap: 100px;
-  }
-
-  .about__mission {
-    .mission__text {
-      color: $grey-light;
-      text-transform: none;
-      font-weight: 400;
-    }
-  }
-
-  .about__contact {
-    // border: 1px solid chocolate;
-    grid-row-start: 2;
-  }
-
-  .about__content {
-    grid-row: span 3;
-    display: grid;
-    height: 100%;
-    grid-template-rows: auto 1fr;
-    
-    .content__summary {
-      // overflow-y: scroll;
-      // height: 100%;
-    }
-
-    .content__title {
-      font-weight: 300;
-      color: $charcoal;
-      padding-top: 20px;
-    }
-
-    .content__text {
-      white-space: pre-line;
-    }
-  }
-
-  .about__news {
-    // border: 1px solid chocolate;
-    height: 100%;
-  }
-
-  .about__timeline {
-    // border: 1px solid chocolate;
-    grid-column-start: 3;
+    grid-template-columns: 1.25fr 3fr 1.25fr;
+    gap: 2rem;
   }
   
 }

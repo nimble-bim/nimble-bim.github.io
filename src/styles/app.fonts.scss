@@ -13,15 +13,6 @@ $text-xxxl: 4rem;
 $font-head: "Space Mono", monospace;
 $font-body: "IBM Plex Sans", sans-serif;
 
-// %brand-head {
-//   font-family: "Space Mono", monospace;
-// }
-
-// %brand-body {
-//   font-family: "IBM Plex Sans", sans-serif;
-//   font-size: $text-sm;
-// }
-
 %content-title {
   font-weight: 300;
   color: $black;
@@ -44,40 +35,28 @@ $font-body: "IBM Plex Sans", sans-serif;
   font-size: 2rem;
 }
 
-.tagline {
-  font-family: $font-head;
-  font-size: $text-md;
-  font-weight: 700;
-  color: $tomato;
-}
-
 body {
   font-family: $font-body;
   color: $charcoal;
 
   h1 {
     font-size: $text-xxl;
-    text-transform: capitalize;
   }
 
   h2 {
     font-size: $text-xl;
-    text-transform: capitalize;
   }
 
   h3 {
     font-size: $text-lg;
-    text-transform: capitalize;
   }
 
   h4 {
     font-size: $text-md;
-    text-transform: capitalize;
   }
 
   h5 {
     font-size: $text-xs;
-    text-transform: capitalize;
     font-weight: 700;
   }
 

@@ -1,12 +1,6 @@
 @import "../../../styles/app.fonts.scss";
 @import "../../../styles/app.colors.scss";
 
-.page {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 3rem;
-}
-
 .home {
   display: grid;
   grid-template-columns: 1fr;
@@ -31,10 +25,6 @@
     color: $black;
   }
 
-  &__divider {
-    display: none;
-  }
-
   &__content {
     color: $charcoal;
   }
@@ -48,15 +38,6 @@
 
   &__title-text {
     font-weight: 700;
-  }
-}
-
-.section {
-  display: grid;
-  gap: 1rem;
-
-  &__divider {
-    display: none;
   }
 }
 

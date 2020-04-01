@@ -1,12 +1,20 @@
 {
   "contacts": [
     {
-      "contact_type": "Slack",
-      "contact_info": "talk.benimble.io"
-    },
-    {
       "contact_type": "Email",
       "contact_info": "info@benimble.io"
+    },
+    {
+      "contact_type": "Phone",
+      "contact_info": "+1-212-654-9874"
+    },
+    {
+      "contact_type": "Instagram",
+      "contact_info": "@nimbleystuff"
+    },
+    {
+      "contact_type": "Twitter",
+      "contact_info": "@nimbleystuff"
     }
   ]
 }
