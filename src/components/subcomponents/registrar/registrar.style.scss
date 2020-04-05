@@ -17,15 +17,15 @@
       font-size: $text_sm;
       font-weight: 400;
     }
-
-    // &:active {
-    //   border-bottom: 2px solid $charcoal;
-    // }
   }
 
   &:active {
     border-bottom: 2px solid $charcoal;
   }
+}
+
+.registration {
+  padding-bottom: 6rem;
 }
 
 .registrar {
@@ -62,10 +62,12 @@
     margin-top: 1.5rem;
     display: contents;
   }
+}
 
-  .button_register {
-    border: 1px solid $tomato;
-    background: $tomato;
-    color: $white;
+@media (min-width: 992px) {
+  .registration {
+    display: grid;
+    grid-template-columns: 4fr 1fr 4fr;
+    gap: 2rem;
   }
 }

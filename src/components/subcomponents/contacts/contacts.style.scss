@@ -19,3 +19,9 @@
   }
   
 }
+
+@media (min-width: 1200px) {
+  .contact {
+    grid-template-columns: 1fr 2fr;
+  }
+}

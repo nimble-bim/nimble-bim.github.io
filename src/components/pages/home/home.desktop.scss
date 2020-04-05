@@ -1,9 +1,9 @@
+@import "../../../styles/app.fonts.scss";
+@import "../../../styles/app.colors.scss";
+
 @media (min-width: 992px) {
-  @import "../../../styles/app.fonts.scss";
-  @import "../../../styles/app.colors.scss";
 
   .home {
-    display: grid;
     padding-top: 4em;
     width: 60rem;
     margin: 0 auto;
@@ -46,11 +46,5 @@
       color: $black;
       font-size: $text-xxl;
     }
-  }
-
-  .registration {
-    display: grid;
-    grid-template-columns: 4fr 1fr 4fr;
-    gap: 2rem;
   }
 }

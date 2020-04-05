@@ -1,7 +1,5 @@
 import React from "react";
-import "./navbar.mobile.scss";
-import "./navbar.desktop.scss";
-import "./navbar.general.scss";
+import "./navbar.style.scss";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 
 const defaultState = {
@@ -42,7 +40,7 @@ class NavbarElement extends React.Component {
           <span className={`fa fa-bars ${theme}`} />
         </Navbar.Toggle>
         <Navbar.Collapse>
-          <Nav variant="pills" className="mr-auto">
+          <Nav className="navbar-nav-left mr-auto">
             <Nav.Item>
               <Nav.Link href="/about" className={theme}>
                 About Us
@@ -59,8 +57,8 @@ class NavbarElement extends React.Component {
               </Nav.Link>
             </Nav.Item>
           </Nav>
-          <Nav variant="pills" className="navbar-nav-left justify-content-end">
-            <Nav.Link href="try" className={`nav-link-left ${theme}`}>
+          <Nav className="navbar-nav-right justify-content-end">
+            <Nav.Link href="try" className={`nav-link-right ${theme}`}>
               Download
             </Nav.Link>
           </Nav>

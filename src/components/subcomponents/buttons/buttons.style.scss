@@ -8,8 +8,15 @@
   width: 75%;
   height: auto;
   text-align: center;
-  padding: 10px 15px;
-  font-size: 14px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+
+  &:hover{
+    cursor: pointer;
+    color: $tomato;
+    background-color: $white;
+    text-decoration: none;
+  }
 }
 
 .button_round {
@@ -26,11 +33,4 @@
   border: 1px solid $tomato;
   color: $tomato;
   background-color: $white;
-}
-
-@media (min-width: 768px) {
-  .button {
-    padding: 10px 15px;
-    font-size: 18px;
-  }
 }
