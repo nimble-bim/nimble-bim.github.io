@@ -17,7 +17,16 @@
 }
 
 .content {
-  &__text{
+  &__text {
     white-space: pre-line;
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+
+  }
+
+  &__subtitle {
+    color: $black;
   }
 }

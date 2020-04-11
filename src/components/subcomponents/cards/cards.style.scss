@@ -4,7 +4,7 @@
 .card {
   border: none;
   height: auto;
-  max-height: 64em;
+  // max-height: 64em;
 
   &__image {
     text-align: center;
@@ -26,9 +26,13 @@
     font-family: $font-head;
   }
 
+  &__number-text {
+    font-size: $text-xs;
+  }
+
   &__content {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 3fr;
   }
 
   &__text {

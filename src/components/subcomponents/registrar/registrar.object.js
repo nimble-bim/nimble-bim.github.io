@@ -69,22 +69,39 @@ export default class Registrar extends React.Component {
   }
 
   render() {
-    const statHeaderContent =
-      "We’ve streamlined this process to eliminate fees, unnecessary steps, and time-wasting appointments. Our efficiency not only makes it easier to buy a home, it translates into the best rates available.";
+    const statHeaderContent = [
+      '"Nimble basically saved me about five hours worth of work in a few minutes. I went from tearing my hair out to having a beer an hour later!"',
+      <br />,
+      <br />,
+      "—Dan Frehmeyer, BR+A Consulting Engineers"
+    ];
 
     const stats_title = "Wouldn’t It Be Nice To Go Home On Time For Once?";
     const register_title = "Try It For Free";
 
-    const register_content =
-      "Nimble is currently in limited beta. Register below to get access to the blah blah thing.";
+    const register_content = [
+      "We're out to help push the world into the future of construction, one user at a time. Nimble is currently in limited beta.",
+      <br />,
+      <br />,
+      "Register below to get access to the world's best BIM behavioral analysis engine"
+    ];
     const stats = [
       {
-        number: "0",
-        desc: "Amount of knowledge of BIM necessary"
+        number: "80%",
+        desc: [
+          "Of what a person learns they forget within an hour.",
+          <br />,
+          "Nimble keeps you on track by helping you in the moment."
+        ]
       },
       {
-        number: "20K",
-        desc: "Amount of knowledge of BIM necessary"
+        number: "30",
+        number2: "min",
+        desc: [
+          "Of the average workday can be freed up.",
+          <br />,
+          "Nimble helps you reach your goals faster so you can take that long lunch ... or just go home."
+        ]
       }
     ];
 
@@ -125,7 +142,7 @@ export default class Registrar extends React.Component {
                     required
                     type="text"
                     name="lastName"
-                    placeholder="Last Name"
+                    placeholder="Last Name (Optional)"
                     onChange={this.handleChange}
                     value={this.state.lastName}
                   />

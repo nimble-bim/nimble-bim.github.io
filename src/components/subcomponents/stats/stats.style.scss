@@ -7,15 +7,29 @@
     margin-bottom: 2rem;
     gap: 1em;
   }
-  
+
   .stat_number {
-    font-family: $font-head;
-    font-size: $text-xl;
-    font-weight: 300;
     align-self: center;
     text-align: center;
+    display: flex;
+    align-items: flex-end;
+  }
+    
+  .stat_number-lg {
+    font-family: $font-head;
+    font-size: $text-xxl;
+    font-weight: 300;
+    text-align: left;
     margin-bottom: 0;
-    color: $tomato;
+    color: $black;
+  }
+
+  .stat_number {
+    font-family: $font-head;
+    font-size: $text-lg;
+    font-weight: 300;
+    margin-bottom: 0;
+    color: $black;
   }
   
   .stat_desc {
