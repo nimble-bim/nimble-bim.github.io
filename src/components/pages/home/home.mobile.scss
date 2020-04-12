@@ -11,12 +11,22 @@
   display: grid;
   gap: 1rem;
   width: 100%;
-  height: 75vh;
+  min-height: 75vh;
 
   &__container {
     align-self: center;
     display: grid;
     gap: 0.75rem;
+    justify-content: center;
+
+    &:nth-child(1){
+      order:2
+    }
+  }
+
+  &__image {
+    width: auto;
+    max-height: 18em;
   }
 
   &__title {

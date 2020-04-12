@@ -12,11 +12,15 @@
   .header {
     height: 60vh;
     gap: 2rem;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 2fr 2fr;
 
     &__container {
       align-self: center;
       display: grid;
+
+      &:nth-child(1){
+        order:0
+      }
     }
 
     &__title {
