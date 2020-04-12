@@ -1,0 +1,54 @@
+@import "../../../styles/app.fonts.scss";
+@import "../../../styles/app.colors.scss";
+
+@media (min-width: 992px) {
+
+  .home {
+    padding-top: 4em;
+    width: 60rem;
+    margin: 0 auto;
+  }
+
+  .header {
+    height: 60vh;
+    gap: 2rem;
+    grid-template-columns: 2fr 2fr;
+
+    &__container {
+      align-self: center;
+      display: grid;
+
+      &:nth-child(1){
+        order:0
+      }
+    }
+
+    &__title {
+      font-family: $font-body;
+      font-weight: 400;
+      color: $black;
+      font-size: $text-xxxl;
+    }
+
+    &__content {
+      font-family: $font-body;
+      margin-top: 1.25rem;
+      white-space: pre-line;
+    }
+  }
+
+  .cards {
+    &__container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-gap: 3rem;
+    }
+
+    &__title-text {
+      font-family: $font-body;
+      font-weight: 400;
+      color: $black;
+      font-size: $text-xxl;
+    }
+  }
+}

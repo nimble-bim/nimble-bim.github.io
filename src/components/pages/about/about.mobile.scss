@@ -1,0 +1,32 @@
+@import "../../../styles/app.fonts.scss";
+@import "../../../styles/app.colors.scss";
+
+.about {
+  display: grid;
+  gap: 1rem;
+
+  &__container {
+    display: grid;
+    gap: 0.75rem;
+    align-content: flex-start;
+  }
+
+  &__mission-text {
+    color: $grey;
+  }
+}
+
+.content {
+  &__text {
+    white-space: pre-line;
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+
+  }
+
+  &__subtitle {
+    color: $black;
+  }
+}

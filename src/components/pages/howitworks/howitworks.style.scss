@@ -1,0 +1,81 @@
+@import "../../../styles/app.fonts.scss";
+@import "../../../styles/app.colors.scss";
+
+.features {
+  display: grid;
+}
+
+#tabs-mob {
+  padding-bottom: 1rem;
+}
+
+.row {
+  margin: 0;
+}
+
+.nav-pills .nav-link.active {
+  border-bottom: 2px solid $tomato;
+  background-color: transparent;
+  color: $tomato;
+}
+
+.nav-pills .nav-link {
+  border-radius: 0;
+}
+
+.section {
+  display: grid;
+  // padding-top: 3rem;
+
+  &__title {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__title-text {
+    color: $tomato;
+    font-family: $font-head;
+    font-size: $text-md;
+    font-weight: 700;
+    padding: 1rem 0.75rem;
+  }
+
+  &__features {
+  }
+
+  &__features-container {
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  &__image {
+    display: grid;
+  }
+
+  &__image-frame {
+    width: 100%;
+  }
+
+  &__description {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0.75rem;
+  }
+}
+
+.description-title {
+  color: $grey-light;
+}
+
+@media (min-width: 992px) {
+  .section {
+    &__features-container {
+      grid-template-columns: 2fr 1fr;
+      gap: 3rem;
+    }
+
+    &__title {
+      display: none
+    }
+  }
+}

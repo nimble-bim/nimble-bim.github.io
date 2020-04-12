@@ -1,0 +1,18 @@
+@import "../../../styles/app.fonts.scss";
+
+.blurb {
+
+  display: grid;
+  gap: 1rem;
+
+  &__title {
+    font-family: $font-body;
+    font-weight: 700;
+    // white-space: pre-line;
+  }
+
+  &__content {
+    font-family: $font-body;
+    // white-space: pre-line;
+  }
+}

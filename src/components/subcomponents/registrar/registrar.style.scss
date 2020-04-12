@@ -1,0 +1,73 @@
+@import "../../../styles/app.fonts.scss";
+@import "../../../styles/app.colors.scss";
+
+%input-typical {
+  border-bottom: 1px solid $charcoal;
+  margin-bottom: 2rem;
+
+  input {
+    border: none;
+    padding-left: 1rem;
+    color: $grey;
+    width: 100%;
+
+    &::placeholder {
+      font-family: $font-body;
+      color: $grey_light;
+      font-size: $text_sm;
+      font-weight: 400;
+    }
+  }
+
+  &:active {
+    border-bottom: 2px solid $charcoal;
+  }
+}
+
+.registration {
+  padding-bottom: 6rem;
+}
+
+.registrar {
+  display: grid;
+  gap: 1.5rem;
+
+  .registrar__title {
+    font-family: $font-body;
+    font-weight: 700;
+    color: $black;
+  }
+
+  .registrar__info {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .info__firstname {
+      @extend %input-typical;
+    }
+
+    .info__lastname {
+      @extend %input-typical;
+    }
+
+    .info__email {
+      @extend %input-typical;
+      // grid-column: span 2;
+    }
+  }
+
+  .info__button {
+    justify-self: center;
+    align-self: center;
+    margin-top: 1.5rem;
+    display: contents;
+  }
+}
+
+@media (min-width: 992px) {
+  .registration {
+    display: grid;
+    grid-template-columns: 4fr 1fr 4fr;
+    gap: 2rem;
+  }
+}

@@ -1,0 +1,100 @@
+@import "./app.themes.scss";
+@import "./app.overrides.scss";
+
+// Mobile-First ( portrait phones, 0px and up)
+html,
+body {
+  font-size: 16px;
+  height: 100%;
+  width: 100%;
+  // transition: all 0.5s ease;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+  padding: 0.75rem;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: auto;
+}
+
+.app-content {
+  margin: 1rem 1rem;
+}
+
+.page {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+.section {
+  display: grid;
+  gap: 1rem;
+
+  &__divider {
+    display: none;
+  }
+}
+
+.tagline {
+  font-family: $font-head;
+  font-size: $text-md;
+  font-weight: 700;
+  color: $tomato;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  // .app-content {
+  //   margin: 3.125em 6.25rem;
+  // }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .page {
+    display: grid;
+    gap: 0.5rem;
+    padding-top: 2em;
+    width: 60rem;
+    margin: 0 auto;
+  }
+
+  .section {
+    &__divider {
+      display: grid;
+      align-self: center;
+      justify-self: center;
+      width: 1px;
+      height: 75%;
+      background-color: $grey-light-extra;
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  body,
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1800px) {
+  body,
+  html {
+    font-size: 24px;
+  }
+}

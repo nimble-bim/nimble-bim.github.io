@@ -1,11 +1,25 @@
 import React from 'react';
-import './blurb.style.css';
+import './blurb.style.scss';
 
-const Blurb = (props) => (
-  <div className="blurb_container">
-    <p className="blurb_type">{props.blurbType}</p>
-    <h1 className="blurb_title">{props.blurbTitle}</h1>
-    <p className="blurb_content">{props.blurbContent}</p>
+const Blurb = (props) => {
+  return props.blurb_subtitle 
+    ? <SubtitledBlurb { ...props } />
+    : <UntitledBlurb {...props} />
+}
+
+
+const SubtitledBlurb = props => (
+  <div className="blurb">
+    <p className="tagline">{props.blurb_subtitle}</p>
+    <h2 className="blurb__title">{props.blurb_title}</h2>
+    <p className="blurb__content">{props.blurb_content}</p>
+  </div>
+)
+
+const UntitledBlurb = props => (
+  <div className="blurb">
+    <h2 className="blurb__title">{props.blurb_title}</h2>
+    <p className="blurb__content">{props.blurb_content}</p>
   </div>
 )
 

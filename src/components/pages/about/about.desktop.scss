@@ -1,0 +1,11 @@
+@import '../../../styles/app.fonts.scss';
+@import '../../../styles/app.colors.scss';
+
+@media (min-width: 992px) {
+
+  .about {
+    grid-template-columns: 1.5fr 3fr 1.5fr;
+    gap: 2rem;
+  }
+  
+}

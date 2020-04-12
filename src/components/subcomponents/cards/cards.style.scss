@@ -1,0 +1,42 @@
+@import "../../../styles/app.colors.scss";
+@import "../../../styles/app.fonts.scss";
+
+.card {
+  border: none;
+  height: auto;
+  // max-height: 64em;
+
+  &__image {
+    text-align: center;
+  }
+
+  &__image-frame {
+    padding: 3em 0;
+    width: auto;
+    max-height: 18em;
+  }
+
+  &__title {
+    font-family: $font-head;
+    text-align: left;
+    font-weight: 700;
+  }
+
+  &__number-title {
+    font-family: $font-head;
+  }
+
+  &__number-text {
+    font-size: $text-xs;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  &__text {
+    font-size: 1em;
+    text-align: left;
+  }
+}

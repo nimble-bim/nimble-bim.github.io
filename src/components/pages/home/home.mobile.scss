@@ -1,0 +1,52 @@
+@import "../../../styles/app.fonts.scss";
+@import "../../../styles/app.colors.scss";
+
+.home {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+.header {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+  min-height: 75vh;
+
+  &__container {
+    align-self: center;
+    display: grid;
+    gap: 0.75rem;
+    justify-content: center;
+
+    &:nth-child(1){
+      order:2
+    }
+  }
+
+  &__image {
+    width: auto;
+    max-height: 18em;
+  }
+
+  &__title {
+    font-size: $text-xxxl;
+    font-weight: 700;
+    color: $black;
+  }
+
+  &__content {
+    color: $charcoal;
+  }
+}
+
+.cards {
+  &__title {
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  &__title-text {
+    font-weight: 700;
+  }
+}
