@@ -1,4 +1,4 @@
-import React, { ReactDOM } from "react";
+import React from "react";
 import { FormButton } from "../buttons/buttons.object";
 import { Modal } from "../modal/modal.object";
 import Blurb from "../../subcomponents/blurb/blurb.object";
@@ -31,10 +31,12 @@ export default class Registrar extends React.Component {
     });
   }
 
-  toggleModal() {
-    this.setState({
-      modal: !this.state.modal
-    });
+  showModal() {
+    this.setState({ modal: true });
+  }
+
+  hideModal() {
+    this.setState({ modal: false });
   }
 
   handleSubmit(e) {
@@ -51,7 +53,7 @@ export default class Registrar extends React.Component {
       firstName: "",
       lastName: ""
     });
-    this.toggleModal();
+    this.showModal();
   }
 
   //Not ready
@@ -116,11 +118,9 @@ export default class Registrar extends React.Component {
       }
     ];
 
-    const display = this.state.modal ? "show" : "hide";
-
     return (
       <div id="register" className="home register">
-        <Modal display={display} />
+        {this.state.modal && <Modal onClick = {() => this.hideModal()} />}
         <span className="tagline">Why Use Nimble?</span>
         <div className="registration">
           <div className="section section__stats">
