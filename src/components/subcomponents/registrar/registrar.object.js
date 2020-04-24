@@ -120,7 +120,7 @@ export default class Registrar extends React.Component {
 
     return (
       <div id="register" className="home register">
-        {this.state.modal && <Modal onClick = {() => this.hideModal()} />}
+        <Modal visible={this.state.modal} onClick = {() => this.hideModal()} />
         <span className="tagline">Why Use Nimble?</span>
         <div className="registration">
           <div className="section section__stats">

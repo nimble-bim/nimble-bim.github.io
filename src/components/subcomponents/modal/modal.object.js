@@ -3,14 +3,10 @@ import img_mail from "../../img/mail.svg";
 import { Button } from "../../subcomponents/buttons/buttons.object";
 import "./modal.style.scss";
 
-export function Modal({ onClick }) {
-  const [status, setStatus] = useState(true);
+export function Modal({ onClick, status }) {
+  // const [status, setStatus] = useState(true);
 
   let display = status ? "show" : "hide";
-
-  function showModal() {
-    setStatus(true);
-  };
 
   return (
     <div className={`modal modal__${display}`}>
