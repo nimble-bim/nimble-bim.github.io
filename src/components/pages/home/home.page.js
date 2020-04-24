@@ -1,14 +1,16 @@
 import React from "react";
+import SiteHelmet from "../../general/helmet";
+
 import "./home.mobile.scss";
 import "./home.desktop.scss";
 import { Button } from "../../subcomponents/buttons/buttons.object";
 import { Card } from "../../subcomponents/cards/cards.object";
 
 //images
-import img_card01 from "../../img/folder-man.svg";
-import img_card02 from "../../img/active_options.svg";
-import img_card03 from "../../img/break_fix.svg";
-import img_main from "../../img/nimbleMain.png";
+import img_card01 from "../../img/behind.svg";
+import img_card02 from "../../img/identify.svg";
+import img_card03 from "../../img/fix.svg";
+import img_main from "../../img/nimble_screen.mp4";
 
 import Registrar from "../../subcomponents/registrar/registrar.object";
 
@@ -33,9 +35,25 @@ export default class HomePage extends React.Component {
               Have potential issues flagged and handled for you. All in
               real-time. All in Revit.
             </p>
-            <Button href="/try" text="Start Working Faster" modifier="primary" />
+            <Button
+              href="/try"
+              text="Start Working Faster"
+              modifier="primary"
+            />
           </div>
-          <div className="header__container"><img className="header__image" src={img_main} /></div>
+          <div className="header__container">
+            <video
+              autoPlay="true"
+              loop="true"
+              muted="true"
+              className="header__image"
+            >
+              <source
+                type="video/mp4"
+                src={img_main}
+              />
+            </video>
+          </div>
         </div>
         <div className="home cards">
           <div className="cards__title">
@@ -56,7 +74,7 @@ export default class HomePage extends React.Component {
                 title="We Help You Recognize Chances To Improve"
                 no="02"
                 notext="In-Model Notification System"
-                text="Much of that change is being driven by huge strides in technology since the start of the 21st century. However, for many in the architectural services industry, we‘ve found that much of that "
+                text="Mistakes happen and Nimble knows that. It scans models to catch simple mistakes before they pile up and prompts you when necessary on how to improve upon them — sort of like a lane departure warning for your car."
               />
               <Card
                 image={img_card03}

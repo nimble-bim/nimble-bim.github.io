@@ -65,9 +65,10 @@ body {
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .page {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     display: grid;
     gap: 0.5rem;
-    padding-top: 2em;
     width: 60rem;
     margin: 0 auto;
   }

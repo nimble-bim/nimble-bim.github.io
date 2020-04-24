@@ -18,6 +18,10 @@
   }
 }
 
+.navbar-light .navbar-nav .nav-link {
+  color: $tomato;
+}
+
 @media (max-width: 767px) {
   .navbar-nav {
     padding-bottom: 1rem;

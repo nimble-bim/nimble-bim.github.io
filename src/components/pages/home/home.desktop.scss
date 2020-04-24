@@ -4,12 +4,12 @@
 @media (min-width: 992px) {
 
   .home {
-    padding-top: 4em;
     width: 60rem;
     margin: 0 auto;
   }
 
   .header {
+    padding-top: 2rem;
     height: 60vh;
     gap: 2rem;
     grid-template-columns: 2fr 2fr;
@@ -50,5 +50,9 @@
       color: $black;
       font-size: $text-xxl;
     }
+  }
+
+  .register {
+    padding-bottom: 2rem;
   }
 }
