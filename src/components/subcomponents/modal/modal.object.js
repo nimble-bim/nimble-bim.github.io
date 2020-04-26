@@ -1,12 +1,12 @@
-import React, { Component, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import img_mail from "../../img/mail.svg";
 import { Button } from "../../subcomponents/buttons/buttons.object";
 import "./modal.style.scss";
 
-export function Modal({ onClick, status }) {
-  // const [status, setStatus] = useState(true);
+export function Modal({ onClick, visible }) {
+  // const [status, setStatus] = useState(display);
 
-  let display = status ? "show" : "hide";
+  let display = visible ? "show" : "hide";
 
   return (
     <div className={`modal modal__${display}`}>

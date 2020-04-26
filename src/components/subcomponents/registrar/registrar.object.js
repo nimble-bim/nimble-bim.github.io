@@ -1,5 +1,5 @@
 import React from "react";
-import { FormButton } from "../buttons/buttons.object";
+import { Button } from "../buttons/buttons.object";
 import { Modal } from "../modal/modal.object";
 import Blurb from "../../subcomponents/blurb/blurb.object";
 import Stats from "../../subcomponents/stats/stats.object";
@@ -120,7 +120,7 @@ export default class Registrar extends React.Component {
 
     return (
       <div id="register" className="home register">
-        <Modal visible={this.state.modal} onClick = {() => this.hideModal()} />
+        <Modal visible={this.state.modal} onClick={() => this.hideModal()} />
         <span className="tagline">Why Use Nimble?</span>
         <div className="registration">
           <div className="section section__stats">
@@ -143,7 +143,7 @@ export default class Registrar extends React.Component {
               <form onSubmit={this.handleSubmit} className="registrar__info">
                 <div className="info__firstname">
                   <input
-                    required
+                    // required
                     type="text"
                     name="firstName"
                     placeholder="First Name"
@@ -162,7 +162,7 @@ export default class Registrar extends React.Component {
                 </div>
                 <div className="info__email">
                   <input
-                    required
+                    // required
                     type="email"
                     name="email"
                     placeholder="Email"
@@ -170,7 +170,7 @@ export default class Registrar extends React.Component {
                     value={this.state.email}
                   />
                 </div>
-                <FormButton text="Register" modifier="primary" />
+                <Button onClick={() => this.showModal()} text="Register" modifier="primary" />
               </form>
             </div>
           </div>
