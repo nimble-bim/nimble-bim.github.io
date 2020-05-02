@@ -8,7 +8,7 @@ import { Card } from "../../subcomponents/cards/cards.object";
 import img_card01 from "../../img/folder-man.svg";
 import img_card02 from "../../img/active_options.svg";
 import img_card03 from "../../img/break_fix.svg";
-import img_main from "../../img/nimbleMain.png";
+import img_main from "../../img/nimble_linter_2_.mp4";
 
 import Registrar from "../../subcomponents/registrar/registrar.object";
 
@@ -36,7 +36,16 @@ export default class HomePage extends React.Component {
               </p>
               <Button href="/try" text="Start Working Faster" modifier="primary" />
             </div>
-            <div className="header__container"><img className="header__image" src={img_main} alt="nimble-show" /></div>
+            <div className="header__container">
+              {/* <img className="header__image" src={img_main} alt="nimble-show" /> */}
+              <video 
+                className="header__image" 
+                src={img_main} 
+                alt="nimble-show" 
+                autoPlay
+                loop
+              /> 
+            </div>
           </div>  
         </section>
         

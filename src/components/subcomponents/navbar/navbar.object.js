@@ -43,7 +43,7 @@ class NavbarElement extends React.Component {
           <Nav className="navbar-nav-left mr-auto">
             <Nav.Item>
               <Nav.Link href="/about" className={theme}>
-                About Us
+                About
               </Nav.Link>
             </Nav.Item>
             {/* <Nav.Item>
