@@ -8,7 +8,8 @@ import { Card } from "../../subcomponents/cards/cards.object";
 import img_card01 from "../../img/folder-man.svg";
 import img_card02 from "../../img/active_options.svg";
 import img_card03 from "../../img/break_fix.svg";
-import img_main from "../../img/nimble_linter_2_.mp4";
+import img_main from "../../img/nimbleMain.png";
+import img_video from "../../img/nimble_linter_2_.mp4";
 
 import Registrar from "../../subcomponents/registrar/registrar.object";
 
@@ -37,19 +38,19 @@ export default class HomePage extends React.Component {
               <Button href="/try" text="Start Working Faster" modifier="primary" />
             </div>
             <div className="header__container">
-              {/* <img className="header__image" src={img_main} alt="nimble-show" /> */}
-              <video 
+              <img className="header__image" src={img_main} alt="nimble-show" />
+              {/* <video 
                 className="header__image" 
-                src={img_main} 
+                src={img_video} 
                 alt="nimble-show" 
                 autoPlay
                 loop
-              /> 
+              />  */}
             </div>
           </div>  
         </section>
         
-        <section>
+        <section className="home">
           <div className="home cards">
             <div className="cards__title">
               <span className="tagline">How it works</span>
@@ -87,7 +88,7 @@ export default class HomePage extends React.Component {
           </div>
         </section>
         
-        <section>
+        <section className="home" >
           <Registrar />
         </section>
       
