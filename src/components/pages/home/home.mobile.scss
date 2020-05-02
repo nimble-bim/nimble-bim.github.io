@@ -5,14 +5,16 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 0.75rem;
+
+  &__header {
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+    min-height: 75vh;
+  }
 }
 
 .header {
-  display: grid;
-  gap: 1rem;
-  width: 100%;
-  min-height: 75vh;
-
   &__container {
     align-self: center;
     display: grid;
