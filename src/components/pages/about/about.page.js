@@ -32,7 +32,7 @@ export default class AboutPage extends React.Component {
           <div className="about__mission about__container">
             <SectionTitle section="Our Mission" />
             <h3 className="about__mission-text">{text_mission}</h3>
-            <Button href="/try" text="Downlad Trial" modifier="primary" />
+            <Button href="/try" text="Download Trial" modifier="primary" />
           </div>
 
           <div className="about__content about__container">

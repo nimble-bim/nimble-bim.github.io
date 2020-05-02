@@ -10,6 +10,7 @@
   text-align: center;
   padding: 0.75rem 1rem;
   font-size: 1rem;
+  transition: all .5s;
 
   &:hover{
     cursor: pointer;
@@ -24,13 +25,13 @@
 }
 
 .button_primary {
-  border: 1px solid $tomato;
+  border: .12em solid $tomato;
   color: $white;
   background-color: $tomato;
 }
 
 .button_secondary {
-  border: 1px solid $tomato;
+  border: .1em solid $tomato;
   color: $tomato;
   background-color: $white;
 }

@@ -8,6 +8,10 @@ export default class RegistrationPage extends React.Component {
   }
 
   render() {
-    return <Registrar />;
+    return (
+      <div className="page">
+        <Registrar />
+      </div>
+    );
   }
 }
