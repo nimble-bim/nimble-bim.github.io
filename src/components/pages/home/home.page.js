@@ -70,7 +70,7 @@ export default class HomePage extends React.Component {
                   title="We Help You Recognize Chances To Improve"
                   no="02"
                   notext="In-Model Notification System"
-                  text="Much of that change is being driven by huge strides in technology since the start of the 21st century. However, for many in the architectural services industry, we‘ve found that much of that "
+                  text="Mistakes happen and Nimble knows that. It scans models to catch simple mistakes before they pile up and prompts you when necessary on how to improve upon them — sort of like a lane departure warning for your car. "
                 />
                 <Card
                   image={img_card03}
