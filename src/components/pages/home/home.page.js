@@ -27,7 +27,7 @@ export default class HomePage extends React.Component {
 
         <section className="home">
           <div className="home__header">
-            <div className="header__container">
+            <div className="header__container header__text">
               <h1 className="header__title">
                 { header_title }
               </h1>
