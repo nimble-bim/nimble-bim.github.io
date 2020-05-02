@@ -17,6 +17,7 @@
 }
 
 .content {
+
   &__text {
     white-space: pre-line;
   }
@@ -28,5 +29,15 @@
 
   &__subtitle {
     color: $black;
+  }
+}
+
+@media(max-width: 475px) {
+  .about__content {
+    margin-top: 4rem;
+  }
+
+  .about__column {
+    margin-top: 4rem;
   }
 }
