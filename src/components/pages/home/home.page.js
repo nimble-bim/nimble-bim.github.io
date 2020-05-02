@@ -5,9 +5,12 @@ import { Button } from "../../subcomponents/buttons/buttons.object";
 import { Card } from "../../subcomponents/cards/cards.object";
 
 //images
-import img_card01 from "../../img/folder-man.svg";
-import img_card02 from "../../img/active_options.svg";
-import img_card03 from "../../img/break_fix.svg";
+import img_card01 from "../../img/01_background.png";
+import img_card02 from "../../img/02_improve.png";
+import img_card03 from "../../img/03_breakfix.png";
+// import img_card01 from "../../img/folder-man.svg";
+// import img_card02 from "../../img/active_options.svg";
+// import img_card03 from "../../img/break_fix.svg";
 import img_main from "../../img/nimbleMain.png";
 import img_video from "../../img/nimble_linter_2_.mp4";
 
@@ -67,7 +70,7 @@ export default class HomePage extends React.Component {
                 />
                 <Card
                   image={img_card02}
-                  title="We Help You Recognize Chances To Improve"
+                  title="We Help You Identify Chances To Improve"
                   no="02"
                   notext="In-Model Notification System"
                   text="Mistakes happen and Nimble knows that. It scans models to catch simple mistakes before they pile up and prompts you when necessary on how to improve upon them — sort of like a lane departure warning for your car. "

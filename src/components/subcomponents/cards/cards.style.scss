@@ -4,10 +4,10 @@
 .card {
   border: none;
   height: auto;
-  // max-height: 64em;
 
   &__image {
     text-align: center;
+    height: 16.67rem;
   }
 
   &__image-frame {
