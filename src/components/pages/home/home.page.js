@@ -65,7 +65,7 @@ export default class HomePage extends React.Component {
         <section className="home">
           <div className="home cards home__cards">
             <div className="cards__title">
-              <span className="tagline">How it works</span>
+              <span className="tagline">How It Works</span>
               <h2 className="cards__title-text">Behind the Magic of Nimble</h2>
             </div>
             <div>
