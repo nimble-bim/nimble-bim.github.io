@@ -28,6 +28,7 @@
   display: grid;
   gap: 1.5rem;
 
+
   .registrar__title {
     font-family: $font-body;
     font-weight: 700;
@@ -65,5 +66,24 @@
     display: grid;
     grid-template-columns: 4fr 1fr 4fr;
     gap: 2rem;
+  }
+}
+
+@media(max-width: 475px) {
+  .section {
+    &__register {
+      padding: 2rem 0px;
+    }
+  }
+
+  .registrar {
+    // padding: 0px 1rem;
+
+    &__info {
+      .button {
+        // width: 100%;
+        margin-left: 2rem;
+      }
+    }
   }
 }
