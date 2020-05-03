@@ -16,6 +16,10 @@
   &__info {
     color: $charcoal;
     font-size: $text-xs;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
   
 }
@@ -23,5 +27,17 @@
 @media (min-width: 1200px) {
   .contact {
     grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media (max-width: 475px) {
+  .contacts {
+    margin: 2rem 0px;
+  }
+
+  .contact {
+    &__type {
+      text-align: left;
+    }
   }
 }

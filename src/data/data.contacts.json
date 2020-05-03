@@ -2,15 +2,18 @@
   "contacts": [
     {
       "contact_type": "Email",
-      "contact_info": "info@benimble.io"
+      "contact_info": "info@benimble.io",
+      "contact_link": "info@benimble.io"
     },
     {
       "contact_type": "Instagram",
-      "contact_info": "@nimble_bim"
+      "contact_info": "@nimble_bim",
+      "contact_link": "https://www.instagram.com/nimble_bim/"
     },
     {
       "contact_type": "Twitter",
-      "contact_info": "@nimble_bim"
+      "contact_info": "@nimble_bim",
+      "contact_link": "https://twitter.com/nimble_bim"
     }
   ]
 }
