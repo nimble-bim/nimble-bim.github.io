@@ -16,6 +16,10 @@
   &__info {
     color: $charcoal;
     font-size: $text-xs;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
   
 }
