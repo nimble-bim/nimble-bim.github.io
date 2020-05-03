@@ -53,7 +53,17 @@
 @media (min-width: 992px) {
   .card {
     &__title {
-      min-height: 4.5rem;
+      // min-height: 4.5rem;
+    }
+
+    
+  }
+}
+
+@media (max-width: 475px) {
+  .card {
+    &__content {
+      padding-top: 2rem;
     }
   }
 }
