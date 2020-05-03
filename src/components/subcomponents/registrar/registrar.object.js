@@ -170,7 +170,7 @@ export default class Registrar extends React.Component {
                     value={this.state.email}
                   />
                 </div>
-                <Button onClick={() => this.showModal()} text="Register" modifier="primary" />
+                <Button onClick={(e) => this.handleSubmit(e)} text="Register" modifier="primary" />
               </form>
             </div>
           </div>

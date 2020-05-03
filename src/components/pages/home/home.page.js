@@ -44,7 +44,7 @@ export default class HomePage extends React.Component {
               <p className="header__content">
                 { header_sub }
               </p>
-              <Button href="/try" text="Start Working Faster" modifier="primary" />
+              <Button onClick={() => this.props.history.push('/try') } text="Start Working Faster" modifier="primary" />
             </div>
             <div className="header__container">
               <video
