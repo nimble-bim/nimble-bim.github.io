@@ -1,0 +1,51 @@
+@import "../../../styles/app.colors.scss";
+@import "../../../styles/app.fonts.scss";
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  background-color: rgba(0, 0, 0, 0.50);
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-items: center;
+  padding: 0 1rem;
+
+  &__show {
+    display: grid;
+  }
+
+  &__hide {
+    display: none;
+  }
+
+  &__card {
+    display: grid;
+    max-width: 32rem;
+    background-color: white;
+    padding: 1rem;
+  }
+
+  &__title {
+    padding: 3rem 1rem;
+    display: grid;
+    gap: 2rem;
+  }
+
+  &__title-text {
+    color: $tomato;
+    justify-self: center;
+  }
+  
+  &__title-img{
+    width: 75%;
+    justify-self: center;
+  }
+}
+
+.button_secondary {
+  justify-self: center;
+}
+
+

@@ -21,15 +21,10 @@ function mapDispatchToProps(dispatch) {
 }
 
 class App extends React.Component {
-  state = {};
 
   render() {
-    const { app } = this.props.settings;
-    // const theme = app.useDarkTheme ? 'dark' : 'bright';
-    const theme = "bright";
-
     return (
-      <div className={`app ${theme}`}>
+      <div>
         <Router history={history}>
           <Routes {...this.props} />
         </Router>

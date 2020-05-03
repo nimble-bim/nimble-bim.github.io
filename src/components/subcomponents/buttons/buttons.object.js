@@ -6,7 +6,7 @@ export const FormButton = props => (
 );
 
 export const Button = props => (
-  <a href={props.href} className={`button button_${props.modifier}`}>{props.text}</a>
+  <span onClick={props.onClick} href={props.href} className={`button button_${props.modifier}`}>{props.text}</span>
 );
 
 export const RoundedButton = props => (
