@@ -1,4 +1,6 @@
 import React from "react";
+import SiteHelmet from "../../general/helmet";
+
 import "./home.mobile.scss";
 import "./home.desktop.scss";
 import { Button } from "../../subcomponents/buttons/buttons.object";
@@ -11,8 +13,12 @@ import img_card03 from "../../img/03_breakfix.png";
 // import img_card01 from "../../img/folder-man.svg";
 // import img_card02 from "../../img/active_options.svg";
 // import img_card03 from "../../img/break_fix.svg";
-import img_main from "../../img/nimbleMain.png";
-import img_video from "../../img/nimble_linter_2_.mp4";
+// import img_main from "../../img/nimbleMain.png";
+// import img_video from "../../img/nimble_linter_2_.mp4";
+// import img_card01 from "../../img/behind.svg";
+// import img_card02 from "../../img/identify.svg";
+// import img_card03 from "../../img/fix.svg";
+import img_main from "../../img/nimble_screen.mp4";
 
 import Registrar from "../../subcomponents/registrar/registrar.object";
 
@@ -41,22 +47,25 @@ export default class HomePage extends React.Component {
               <Button href="/try" text="Start Working Faster" modifier="primary" />
             </div>
             <div className="header__container">
-              <img className="header__image" src={img_main} alt="nimble-show" />
-              {/* <video 
-                className="header__image" 
-                src={img_video} 
-                alt="nimble-show" 
-                autoPlay
-                loop
-              />  */}
+              <video
+                autoPlay="true"
+                loop="true"
+                muted="true"
+                className="header__image"
+              >
+                <source
+                  type="video/mp4"
+                  src={img_main}
+                />
+              </video>
             </div>
           </div>  
         </section>
         
         <section className="home">
-          <div className="home cards">
+          <div className="home cards home__cards">
             <div className="cards__title">
-              <span className="tagline">How it works</span>
+              <span className="tagline">How It Works</span>
               <h2 className="cards__title-text">Behind the Magic of Nimble</h2>
             </div>
             <div>
@@ -92,7 +101,9 @@ export default class HomePage extends React.Component {
         </section>
         
         <section className="home" >
-          <Registrar />
+          <div className="home home__registrar">
+            <Registrar />
+          </div>
         </section>
       
       </div>

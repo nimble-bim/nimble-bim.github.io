@@ -11,9 +11,8 @@
   }
 
   &__image-frame {
-    padding: 3em 0;
+    padding-bottom: 2rem;
     width: auto;
-    max-height: 18em;
   }
 
   &__content {
@@ -48,5 +47,23 @@
   &__text {
     font-size: .75rem;
     text-align: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .card {
+    &__title {
+      // min-height: 4.5rem;
+    }
+
+    
+  }
+}
+
+@media (max-width: 475px) {
+  .card {
+    &__content {
+      padding-top: 2rem;
+    }
   }
 }

@@ -16,6 +16,14 @@
   }
 }
 
+@media(max-width: 475px) {
+  .about {
+    &__container {
+      padding: 0px 1rem;
+    }
+  }
+}
+
 .content {
 
   &__text {

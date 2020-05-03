@@ -1,5 +1,6 @@
 import React from "react";
-import { FormButton } from "../buttons/buttons.object";
+import { Button } from "../buttons/buttons.object";
+import { Modal } from "../modal/modal.object";
 import Blurb from "../../subcomponents/blurb/blurb.object";
 import Stats from "../../subcomponents/stats/stats.object";
 
@@ -16,7 +17,8 @@ export default class Registrar extends React.Component {
       email: "",
       firstName: "",
       lastName: "",
-      items: []
+      items: [],
+      modal: false
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -27,6 +29,14 @@ export default class Registrar extends React.Component {
     this.setState({
       [e.target.name]: e.target.value
     });
+  }
+
+  showModal() {
+    this.setState({ modal: true });
+  }
+
+  hideModal() {
+    this.setState({ modal: false });
   }
 
   handleSubmit(e) {
@@ -43,8 +53,10 @@ export default class Registrar extends React.Component {
       firstName: "",
       lastName: ""
     });
+    this.showModal();
   }
 
+  //Not ready
   componentDidMount() {
     const itemsRef = firebase.database().ref("items");
     itemsRef.on("value", snapshot => {
@@ -63,6 +75,7 @@ export default class Registrar extends React.Component {
     });
   }
 
+  // Not ready
   removeItem(itemId) {
     const itemRef = firebase.database().ref(`/items/${itemId}`);
     itemRef.remove();
@@ -106,7 +119,8 @@ export default class Registrar extends React.Component {
     ];
 
     return (
-      <div id="register" className="home">
+      <div id="register" className="home register">
+        <Modal visible={this.state.modal} onClick={() => this.hideModal()} />
         <span className="tagline">Why Use Nimble?</span>
         <div className="registration">
           <div className="section section__stats">
@@ -129,7 +143,7 @@ export default class Registrar extends React.Component {
               <form onSubmit={this.handleSubmit} className="registrar__info">
                 <div className="info__firstname">
                   <input
-                    required
+                    // required
                     type="text"
                     name="firstName"
                     placeholder="First Name"
@@ -139,7 +153,6 @@ export default class Registrar extends React.Component {
                 </div>
                 <div className="info__lastname">
                   <input
-                    required
                     type="text"
                     name="lastName"
                     placeholder="Last Name (Optional)"
@@ -149,7 +162,7 @@ export default class Registrar extends React.Component {
                 </div>
                 <div className="info__email">
                   <input
-                    required
+                    // required
                     type="email"
                     name="email"
                     placeholder="Email"
@@ -157,7 +170,7 @@ export default class Registrar extends React.Component {
                     value={this.state.email}
                   />
                 </div>
-                <FormButton text="Register" modifier="primary" />
+                <Button onClick={() => this.showModal()} text="Register" modifier="primary" />
               </form>
             </div>
           </div>

@@ -58,7 +58,7 @@ class NavbarElement extends React.Component {
             </Nav.Item> */}
           </Nav>
           <Nav className="navbar-nav-right justify-content-end">
-            <Nav.Link href="try" className={`nav-link-right ${theme}`}>
+            <Nav.Link href="try" className={`nav-link-right`}>
               Download
             </Nav.Link>
           </Nav>
