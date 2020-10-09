@@ -111,8 +111,8 @@ export default class Registrar extends React.Component {
         number: "30",
         number2: "min",
         desc: [
-          "Of the average workday can be freed up.",
-          <br />,
+//           "Of the average workday can be freed up.",
+//           <br />,
           "Nimble helps you reach your goals faster so you can take that long lunch ... or just go home."
         ]
       }
