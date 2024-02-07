@@ -1,4 +1,4 @@
-@import '../../../styles/app.colors.scss';
+@import "../../../styles/app.colors.scss";
 @import "../../../styles/app.fonts.scss";
 
 .button {
@@ -10,13 +10,27 @@
   text-align: center;
   padding: 0.75rem 1rem;
   font-size: 1rem;
-  transition: all .5s;
+  transition: all 0.5s;
 
-  &:hover{
+  &:hover {
     cursor: pointer;
     color: $tomato;
     background-color: $white;
     text-decoration: none;
+  }
+
+  &.disabled {
+    background-color: #efefef !important;
+    color: $grey_light !important;
+    cursor: not-allowed !important;
+    border: #efefef !important;
+
+    &:hover {
+      background-color: #efefef !important;
+      color: $grey_light !important;
+      cursor: not-allowed !important;
+      border: #efefef !important;
+    }
   }
 }
 
@@ -25,13 +39,13 @@
 }
 
 .button_primary {
-  border: .12em solid $tomato;
+  border: 0.12em solid $tomato;
   color: $white;
   background-color: $tomato;
 }
 
 .button_secondary {
-  border: .1em solid $tomato;
+  border: 0.1em solid $tomato;
   color: $tomato;
   background-color: $white;
 }

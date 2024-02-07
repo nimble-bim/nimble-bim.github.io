@@ -38,8 +38,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "getVars" : "heroku config -a nimble-customer -s >> .env",
-    "prestart": "yarn install && yarn getVars"
+    "getVars": "heroku config -a nimble-customer -s >> .env"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -30,21 +30,20 @@ export default class HomePage extends React.Component {
 
   render() {
     const header_title = `Design, Innovate & Collaborate Faster`;
-    const header_sub = `Save time creating mistake free models with Nimble's AI-powered design assistant`;
+    const header_sub = `Save time creating mistake free models with Nimble's powerful design assistant`;
 
     return (
       <div className="page">
-
         <section className="home">
           <div className="home__header">
             <div className="header__container header__text">
-              <h1 className="header__title">
-                { header_title }
-              </h1>
-              <p className="header__content">
-                { header_sub }
-              </p>
-              <Button onClick={() => this.props.history.push('/try') } text="Start Working Faster" modifier="primary" />
+              <h1 className="header__title">{header_title}</h1>
+              <p className="header__content">{header_sub}</p>
+              <Button
+                onClick={() => this.props.history.push("/try")}
+                text="Start Working Faster"
+                modifier="primary"
+              />
             </div>
             <div className="header__container">
               <video
@@ -53,15 +52,12 @@ export default class HomePage extends React.Component {
                 muted="true"
                 className="header__image"
               >
-                <source
-                  type="video/mp4"
-                  src={img_main}
-                />
+                <source type="video/mp4" src={img_main} />
               </video>
             </div>
-          </div>  
+          </div>
         </section>
-        
+
         <section className="home">
           <div className="home cards home__cards">
             <div className="cards__title">
@@ -99,13 +95,12 @@ export default class HomePage extends React.Component {
             </div>
           </div>
         </section>
-        
-        <section className="home" >
+
+        <section className="home">
           <div className="home home__registrar">
             <Registrar />
           </div>
         </section>
-      
       </div>
     );
   }

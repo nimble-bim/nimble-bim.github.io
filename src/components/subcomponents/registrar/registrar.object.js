@@ -40,46 +40,46 @@ export default class Registrar extends React.Component {
   }
 
   handleSubmit(e) {
-    e.preventDefault();
-    const itemsRef = firebase.database().ref("items");
-    const item = {
-      email: this.state.email,
-      firstName: this.state.firstName,
-      lastName: this.state.lastName
-    };
-    itemsRef.push(item);
-    this.setState({
-      email: "",
-      firstName: "",
-      lastName: ""
-    });
-    this.showModal();
+    // e.preventDefault();
+    // const itemsRef = firebase.database().ref("items");
+    // const item = {
+    //   email: this.state.email,
+    //   firstName: this.state.firstName,
+    //   lastName: this.state.lastName
+    // };
+    // itemsRef.push(item);
+    // this.setState({
+    //   email: "",
+    //   firstName: "",
+    //   lastName: ""
+    // });
+    // this.showModal();
   }
 
   //Not ready
   componentDidMount() {
-    const itemsRef = firebase.database().ref("items");
-    itemsRef.on("value", snapshot => {
-      let items = snapshot.val();
-      let newState = [];
-      for (let item in items) {
-        newState.push({
-          id: item,
-          email: items[item].email,
-          user: items[item].user
-        });
-      }
-      this.setState({
-        items: newState
-      });
-    });
+    // const itemsRef = firebase.database().ref("items");
+    // itemsRef.on("value", snapshot => {
+    //   let items = snapshot.val();
+    //   let newState = [];
+    //   for (let item in items) {
+    //     newState.push({
+    //       id: item,
+    //       email: items[item].email,
+    //       user: items[item].user
+    //     });
+    //   }
+    //   this.setState({
+    //     items: newState
+    //   });
+    // });
   }
 
-  // Not ready
-  removeItem(itemId) {
-    const itemRef = firebase.database().ref(`/items/${itemId}`);
-    itemRef.remove();
-  }
+  // // Not ready
+  // removeItem(itemId) {
+  //   const itemRef = firebase.database().ref(`/items/${itemId}`);
+  //   itemRef.remove();
+  // }
 
   render() {
     const statHeaderContent = [
@@ -111,8 +111,8 @@ export default class Registrar extends React.Component {
         number: "30",
         number2: "min",
         desc: [
-//           "Of the average workday can be freed up.",
-//           <br />,
+          //           "Of the average workday can be freed up.",
+          //           <br />,
           "Nimble helps you reach your goals faster so you can take that long lunch ... or just go home."
         ]
       }
@@ -170,7 +170,12 @@ export default class Registrar extends React.Component {
                     value={this.state.email}
                   />
                 </div>
-                <Button onClick={(e) => this.handleSubmit(e)} text="Register" modifier="primary" />
+                <Button
+                  onClick={e => this.handleSubmit(e)}
+                  text="Register"
+                  modifier="primary"
+                  disabled
+                />
               </form>
             </div>
           </div>

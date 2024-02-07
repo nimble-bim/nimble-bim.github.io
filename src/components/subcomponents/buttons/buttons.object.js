@@ -6,7 +6,15 @@ export const FormButton = props => (
 );
 
 export const Button = props => (
-  <span onClick={props.onClick} href={props.href} className={`button button_${props.modifier}`}>{props.text}</span>
+  <span
+    onClick={props.onClick}
+    href={props.href}
+    className={`button button_${props.modifier} ${
+      props.disabled ? "disabled" : ""
+    }`}
+  >
+    {props.text}
+  </span>
 );
 
 export const RoundedButton = props => (
